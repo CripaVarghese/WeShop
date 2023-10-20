@@ -1,8 +1,6 @@
 import {
   Box,
   Stack,
-  SimpleGrid,
-  Card,
   Avatar,
   Button,
   ButtonGroup,
@@ -23,16 +21,14 @@ import ShoppingCartProvider from './context/ShoppingCartContext'
 import { useState } from 'react'
 import { FaShoppingCart } from 'react-icons/fa'
 import { FiSearch } from 'react-icons/fi'
-import { GiShoppingCart } from 'react-icons/Gi'
-import { HiShoppingBag } from 'react-icons/Hi'
-import CardContents from './components/CardContents'
+import { HiOutlineShoppingBag } from 'react-icons/Hi'
 import DrawerContentDisplay from './components/DrawerContentDisplay'
 
 function App(  ) {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [filter, setFilter] = useState(data)
 
-  const buttons= ['Men','Women','Kids', 'Home and Living', 'Beauty']
+  const navbarItems= ['MEN','WOMEN','KIDS', 'HOME & LIVING', 'BEAUTY', 'STUDIO']
 
   const handleAllClick = () => {
     setFilter(data)
@@ -46,71 +42,56 @@ function App(  ) {
 
   return (
     <ShoppingCartProvider>
-      <Box>
-        <Box position={'fixed'} width={'100%'} bg={'white'} zIndex='1'>
-          <Flex justifyContent={'space-between'} py={{ base: '3', lg: '4' }} px={'10'} justifyItems={'center'} shadow={'lg'}>
-              <HStack spacing="4" flexDirection={{ base: 'column', sm:'row' }}>
+        <Box w={'100%'} position={'fixed'} bg={'white'} zIndex='1' shadow={'lg'} display={'flex'} justifyContent={'center'} boxShadow={'rgba(0, 0, 0, 0.1) 0px 1px 2px 0px'}>
+          <Stack flexDirection={{ base: 'column', sm:'row' }} justifyContent={'space-between'} alignItems={'center'} h={'20'} w={'95%'}>
                 <HStack fontSize="md">
-                  <Icon as={GiShoppingCart} fontSize="2xl" 
-                    fontWeight='extrabold' />
                   <Text m="0" p='0' bgGradient='linear(to-l, #7928CA, #FF0980)' bgClip='text' fontSize='2xl'
                     fontWeight='extrabold'>WeShop</Text>
                 </HStack>
-                <ButtonGroup variant="ghost" spacing="1" >
-                  <Button onClick={handleAllClick} _hover={{ bgGradient:'linear(to-l, green, brown)', bgClip:'text' }}>All</Button>
+                <ButtonGroup variant="ghost">
                   {
-                    buttons.map((button, index) => {
+                    navbarItems.map((item, index) => {
                       return(
-                        <Button onClick={handleClick} title={button} key={index} _hover={{ bgGradient:'linear(to-l, green, orange)', bgClip:'text' }}>{button}</Button>
+                        <Button  marginTop={'0'} fontSize={'xs'} fontWeight={'bold'} onClick={handleClick} title={item} key={index} _hover={{ bgGradient:'linear(to-l, green, orange)', bgClip:'text' }}>{item}</Button>
                       )
                     })
                   }
                 </ButtonGroup>
-                <InputGroup maxW="xs">
+                <InputGroup w="md" backgroundColor='#F5F4F7' borderColor='#F5F4F7' borderRadius={'3px'}>
                   <InputLeftElement pointerEvents="none">
                     <Icon as={FiSearch} color="muted" boxSize="5" />
                   </InputLeftElement>
-                    <Input width={'30rem'} placeholder="Search for products" />
+                    <Input width={'30rem'} fontSize={'xs'} placeholder="Search for products, brands and more" />
                 </InputGroup>
-              </HStack>
-              <HStack spacing="4">
-                <ButtonGroup variant="ghost" spacing="1">
-
-                  <IconButton icon={<FaShoppingCart fontSize="1.25rem" onClick={onOpen}  />} aria-label="" title="Add to cart" _hover={{ bgGradient:'linear(to-r, yellow.500, green.500)', color:'white'}} />
-                    <Drawer
+              {/* </HStack> */}
+              <HStack >
+                <ButtonGroup variant="ghost" display={'flex'} alignItems={'center'}>
+                  <Stack>
+                    <Avatar boxSize="6"  />
+                    <Text>Profile</Text>
+                  </Stack>
+                  <Stack>
+                    <IconButton icon={<FaShoppingCart m={'0'}  fontSize="1.25rem" onClick={onOpen}  />}  aria-label="" title="Add to cart" _hover={{ bgGradient:'linear(to-r, yellow.500, green.500)', color:'white'}} />
+                    <Text>Profile</Text>
+                  </Stack>
+                  <Drawer
                     isOpen={isOpen}
                     placement='right'
                     onClose={onClose}
                   >
                     <DrawerOverlay />
                     <DrawerContentDisplay />
-                  </Drawer>  
-
-                  <IconButton icon={<HiShoppingBag fontSize="1.50rem" />} aria-label="" title="Orders" _hover={{ bgGradient:'linear(to-r, teal.500, pink.500)', color:'white'}}  />
-                </ButtonGroup>
-                <Avatar boxSize="10"  />
-              </HStack>
-          </Flex>
-        </Box>
-    
-        <Box as="section" pb={{ base: '12', md: '60' }} pt={{md:'20 '}} bgGradient="radial(gray.300, yellow.400, pink.200)">
-            <Box boxShadow="sm" py={4}>
-              <Box>
-                  <Stack py={'20'} px={'10'} alignItems='center'>
-                    <SimpleGrid columns={{sm: 2, md: 2, lg: 3, xl: 4, '2xl':6}} spacing={'10'}>
-                      {
-                      filter.map((item, index) => (
-                        <Card maxW='sm' key={item.id} h='auto'>
-                      <CardContents {...item} />
-                      </Card>
-                      ))
-                  }
-                    </SimpleGrid>
+                  </Drawer> 
+                  <Stack>
+                    <IconButton icon={<HiOutlineShoppingBag fontSize="1.50rem" />} aria-label="" title="Orders" _hover={{ bgGradient:'linear(to-r, teal.500, pink.500)', color:'white'}}  />
+                    <Text>Profile</Text>
                   </Stack>
-              </Box>
-            </Box>
+                 
+                   
+                </ButtonGroup>
+              </HStack>
+          </Stack>
         </Box>
-      </Box>
   </ShoppingCartProvider>
   )
 }
@@ -121,9 +102,15 @@ export default App
 
   {/* w={{ base:'sm', sm:'xl', lg:'2xl' }} */}
    
+  {/* py={{ base: '3', lg: '4' }} px={'10'}  */}
+
+  {/* <Button onClick={handleAllClick} _hover={{ bgGradient:'linear(to-l, green, brown)', bgClip:'text' }}>All</Button> */}
 
 
 
+  // <Box as="section" w={'100%'} pt={{md:'20'}} display={'flex'} justifyContent='center'>
+    //     <AppContent filter={filter}/>
+  // </Box>
        
 
 
