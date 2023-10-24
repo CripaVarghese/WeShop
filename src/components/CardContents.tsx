@@ -1,4 +1,4 @@
-import { CardBody, Stack, Heading, CardFooter, ButtonGroup, Button, Text,Image, Flex } from '@chakra-ui/react'
+import { CardBody, Stack, Heading, CardFooter, ButtonGroup, Button, Text,Image, Flex, Container } from '@chakra-ui/react'
 import { useShoppingCart } from '../context/ShoppingCartContext'
 
 export type DataType = {
@@ -9,19 +9,19 @@ export type DataType = {
   description:string,
 }
 
-const CardContents = ({ id,image, name,price, description }: DataType) => {
+const CardContents = ({ id,image, name,price }: DataType) => {
 
   const { getItemQuantity, increaseItemQuantity, decreaseItemQuantity } = useShoppingCart()
   const quantity=getItemQuantity(id);
   return (
-    <>
-      <CardBody h='auto'>
+    <Container p={'20px'}>
+      <CardBody h='auto' p={0}>
         <Image
           src={image}
           alt={name}
           borderRadius='lg'
-          maxH={'300'}
-          minW='100%'
+          height={'200'}
+          width='100%'
           objectFit="cover" />
         <Stack mt='6' spacing='3'>
           <Stack direction={'row'} alignItems={'flex-start'} justifyContent={'space-between'}>
@@ -30,12 +30,9 @@ const CardContents = ({ id,image, name,price, description }: DataType) => {
               Rs{price}
             </Text>
           </Stack>
-          <Text h='auto'>
-            {description}
-          </Text>
         </Stack>
       </CardBody>
-      <CardFooter>
+      <CardFooter p={'0'} display={'flex'} justifyContent={'center'}>
           <ButtonGroup spacing='4'>
             <Button variant='solid' colorScheme='blue'>
               Buy now
@@ -48,7 +45,7 @@ const CardContents = ({ id,image, name,price, description }: DataType) => {
             }
           </ButtonGroup>
       </CardFooter>
-    </>
+    </Container>
   )
 }
 
