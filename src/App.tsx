@@ -25,22 +25,23 @@ import { HiOutlineShoppingBag } from 'react-icons/Hi'
 import DrawerContentDisplay from './components/DrawerContentDisplay'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
+import NavbarTypeItems from './components/NavbarTypeItems'
 
 function App(  ) {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [filter, setFilter] = useState(data)
 
-  const navbarItems= ['MEN','WOMEN','KIDS', 'HOME & LIVING', 'BEAUTY', 'STUDIO']
+// const navbarItems= ['MEN','WOMEN','KIDS', 'HOME & LIVING', 'BEAUTY', 'STUDIO']
 
-  const handleAllClick = () => {
-    setFilter(data)
-}
+//   const handleAllClick = () => {
+//     setFilter(data)
+// }
 
-  const handleClick = (event:any) => {
-    const title = event.target.title;
-    const items = data.filter(item => item.type === title)
-    setFilter(items);
-  };
+//   const handleClick = (event:any) => {
+//     const title = event.target.title;
+//     const items = data.filter(item => item.type === title)
+//     setFilter(items);
+//   };
 
   return (
     <ShoppingCartProvider>
@@ -50,15 +51,7 @@ function App(  ) {
                   <Text m="0" p='0' bgGradient='linear(to-l, #7928CA, #FF0980)' bgClip='text' fontSize='2xl'
                     fontWeight='extrabold'>WeShop</Text>
                 </HStack>
-                <ButtonGroup variant="ghost">
-                  {
-                    navbarItems.map((item, index) => {
-                      return(
-                        <Button  marginTop={'0'} fontSize={'xs'} fontWeight={'bold'} onClick={handleClick} title={item} key={index} _hover={{ bgGradient:'linear(to-l, green, orange)', bgClip:'text' }}>{item}</Button>
-                      )
-                    })
-                  }
-                </ButtonGroup>
+                <NavbarTypeItems />
                 <InputGroup w="md" backgroundColor='#F5F4F7' borderColor='#F5F4F7' borderRadius={'3px'}>
                   <InputLeftElement pointerEvents="none">
                     <Icon as={FiSearch} color="muted" boxSize="5" />
