@@ -20,14 +20,13 @@ const Footer = () => {
                 <Text {...footerStyles.listItemStyle}>{onlineData.label}</Text>
               )}
             </Stack>
-            <Stack gap={'0'}>
+            <Stack>
               <Text {...footerStyles.headingStyle}>USEFUL LINKS</Text>
               {usefulLinks_Data.map((linksData) => 
               <Text  {...footerStyles.listItemStyle}>{linksData.label}</Text>
               )}
             </Stack>
           </Stack>
-
           <Stack>
                 <Text {...footerStyles.headingStyle}>CUSTOMER POLICIES</Text>
                 {policy.map((policyData) => 
