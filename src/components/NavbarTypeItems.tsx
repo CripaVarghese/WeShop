@@ -8,28 +8,37 @@ import Dropdown from './Dropdown'
 
 const NavbarTypeItems = () => {
   const [dropdown, setDropdown] = useState(false);
+  const [open, setOpen] = React.useState(false);
+
+  
   
   return (
     <HStack w={'35%'} justifyContent={'space-between'}>
                   {
                     navbarItems.map((menu, index) => {
                       return(
-                      <Text key={index} fontSize={'xs'} fontWeight={'bold'}  margin={'0'}  _hover={{ bgGradient:'linear(to-l, green, orange)', bgClip:'text' }} onClick={() => setDropdown((prev) => !prev)}
-                      >
+                        <>
                         {menu.submenu ? (
                             <>
-                              <button
-                                aria-expanded={dropdown ? "true" : "false"}
-                                onClick={() => setDropdown((prev) => !prev)}
+                              <Text key={index} fontSize={'xs'} fontWeight={'bold'}  margin={'0'}  _hover={{ bgGradient:'linear(to-l, green, orange)', bgClip:'text' }}
+                                onClick={() => setOpen((!open))} position='relative'
                               >
-                                {menu.title}
-                              </button>
+                                {menu.label}
+                              </Text>
+                              {open ?
                                 <Dropdown submenus={menu.submenu} dropdown={dropdown} />
+                                :
+                                ""}
                             </>
                           ):
-                          <a href={menu.url}>{menu.title}</a>
-                          }
-                      </Text>
+                          <a href={menu.link}>
+                            <Text key={index} fontSize={'xs'} fontWeight={'bold'}  margin={'0'}  _hover={{ bgGradient:'linear(to-l, green, orange)', bgClip:'text' }}
+                            >
+                              {menu.label}
+                            </Text>
+                          </a>
+                        }
+                        </>
                       )
                     })
                   }

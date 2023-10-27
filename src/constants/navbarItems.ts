@@ -1,40 +1,114 @@
 export const navbarItems = [
   {
-    title: "MEN",
-    url: "/men",
+    label: "MEN",
+    link: "/men",
     submenu: [
+      // topWear
       {
-        title: "T-Shirts",
-        url: "#",
+        label: "T-Shirts",
+        link: "#",
       },
       {
-        title: "Casual Shirts",
-        url: "#",
+        label: "Casual Shirts",
+        link: "#",
       },
       {
-        title: "Formal Shirts",
-        url: "#",
+        label: "Formal Shirts",
+        link: "#",
+      },
+      {
+        label: "Sweatshirts",
+        link: "#",
+      },
+      {
+        label: "Sweaters",
+        link: "#",
+      },
+      {
+        label: "Jackets",
+        link: "#",
+      },
+      {
+        label: "Blazers & Coats",
+        link: "#",
+      },
+      {
+        label: "Suits",
+        link: "#",
+      },
+      {
+        label: "Rain Jackets",
+        link: "#",
+      },
+
+      // Indian & Festive Wear
+      {
+        label: "Kurtas & Kurta Sets",
+        link: "#",
+      },
+      {
+        label: "Sherwanis",
+        link: "#",
+      },
+      {
+        label: "Nehru Jackets",
+        link: "#",
+      },
+      {
+        label: "Dhotis",
+        link: "#",
       },
     ],
   },
   {
-    title: "WOMEN",
-    url: "/women",
+    label: "WOMEN",
+    link: "/women",
+    // submenu: [
+    //     // Indian & Fusion Wear
+    // {
+    //   label: "Kurtas & Suits",
+    //   link: "#",
+    // },
+    // {
+    //   label: "Kurtis, Tunics & Tops",
+    //   link: "#",
+    // },
+    // {
+    //   label: "Sarees",
+    //   link: "#",
+    // },
+    // {
+    //   label: "Ethnic Wear",
+    //   link: "#",
+    // },
+    // {
+    //   label: "Leggings, Salwars & Churidars",
+    //   link: "#",
+    // },
+    // {
+    //   label: "Skirts & Palazzos",
+    //   link: "#",
+    // },
+    // {
+    //   label: "Dress Materials",
+    //   link: "#",
+    // },
+    //   ]
   },
   {
-    title: "KIDS",
-    url: "/kids",
+    label: "KIDS",
+    link: "/kids",
   },
   {
-    title: "HOME & LIVING",
-    url: "/home_and_living",
+    label: "HOME & LIVING",
+    link: "/home_and_living",
   },
   {
-    title: "BEAUTY",
-    url: "/beauty",
+    label: "BEAUTY",
+    link: "/beauty",
   },
   {
-    title: "STUDIO",
-    url: "/studio",
+    label: "STUDIO",
+    link: "/studio",
   },
 ];

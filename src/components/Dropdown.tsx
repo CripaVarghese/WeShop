@@ -1,18 +1,16 @@
 import {
-  Box,
+  Box, Text,Grid, GridItem, Stack
 } from '@chakra-ui/react'
 
 
-const Dropdown = ({submenus, dropdown}:any) => {
+const Dropdown = ({submenus}:any) => {
   return (
-    <Box>
-      <ul className={`dropdown ${dropdown ? "show" : ""}`}>
+    <Box position='absolute' top='80px' right='100px' width='83%' height='440px' backgroundColor='white' p={'20px 40px'}>
         {submenus.map((submenu, index) => (
-          <li key={index}>
-            <a href={submenu.url}>{submenu.title}</a>
-          </li>
+               <Stack key={index} _hover={{ fontWeight:'bold' }} fontSize={'13px'} py={'2px'}>
+                 <a href={submenu.url}>{submenu.label}</a>
+               </Stack>
         ))}
-      </ul>
     </Box>
   )
 }
