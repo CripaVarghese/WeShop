@@ -3,60 +3,71 @@ export const navbarItems = [
     label: "MEN",
     link: "/men",
     submenu: [
-      // topWear
       {
-        label: "T-Shirts",
-        link: "#",
+        label: "TopWear",
+        link: "/men",
+        color: "#ee5f73",
+        submenu: [
+          {
+            label: "T-Shirts",
+            link: "#",
+          },
+          {
+            label: "Casual Shirts",
+            link: "#",
+          },
+          {
+            label: "Formal Shirts",
+            link: "#",
+          },
+          {
+            label: "Sweatshirts",
+            link: "#",
+          },
+          {
+            label: "Sweaters",
+            link: "#",
+          },
+          {
+            label: "Jackets",
+            link: "#",
+          },
+          {
+            label: "Blazers & Coats",
+            link: "#",
+          },
+          {
+            label: "Suits",
+            link: "#",
+          },
+          {
+            label: "Rain Jackets",
+            link: "#",
+          },
+        ],
       },
       {
-        label: "Casual Shirts",
-        link: "#",
-      },
-      {
-        label: "Formal Shirts",
-        link: "#",
-      },
-      {
-        label: "Sweatshirts",
-        link: "#",
-      },
-      {
-        label: "Sweaters",
-        link: "#",
-      },
-      {
-        label: "Jackets",
-        link: "#",
-      },
-      {
-        label: "Blazers & Coats",
-        link: "#",
-      },
-      {
-        label: "Suits",
-        link: "#",
-      },
-      {
-        label: "Rain Jackets",
-        link: "#",
-      },
-
-      // Indian & Festive Wear
-      {
-        label: "Kurtas & Kurta Sets",
-        link: "#",
-      },
-      {
-        label: "Sherwanis",
-        link: "#",
-      },
-      {
-        label: "Nehru Jackets",
-        link: "#",
-      },
-      {
-        label: "Dhotis",
-        link: "#",
+        label: "Indian & Festive Wear",
+        link: "/men",
+        color: "#ee5f73",
+        submenu: [
+          {
+            label: "Kurtas & Kurta Sets",
+            link: "#",
+          },
+          {
+            label: "Sherwanis",
+            link: "#",
+          },
+          {
+            label: "Nehru Jackets",
+            link: "#",
+          },
+          {
+            label: "Dhotis",
+            link: "#",
+          },
+        ],
       },
     ],
   },
