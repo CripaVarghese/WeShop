@@ -26,6 +26,7 @@ import DrawerContentDisplay from './components/DrawerContentDisplay'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
 import NavbarTypeItems from './components/NavbarTypeItems'
+import {navbarOptionsData} from './constants/navbarOptionsData'
 
 function App(  ) {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -51,7 +52,7 @@ function App(  ) {
                   <Text m="0" p='0' bgGradient='linear(to-l, #7928CA, #FF0980)' bgClip='text' fontSize='2xl'
                     fontWeight='extrabold'>WeShop</Text>
                 </HStack>
-                <NavbarTypeItems />
+                <NavbarTypeItems data={navbarOptionsData} />
                 <InputGroup w="md" backgroundColor='#F5F4F7' borderColor='#F5F4F7' borderRadius={'3px'}>
                   <InputLeftElement pointerEvents="none">
                     <Icon as={FiSearch} color="muted" boxSize="5" />
