@@ -13,7 +13,7 @@ const DropdownSubItems = ({submenus,fontWeight}:any) => {
                <Stack key={index} color={submenu.color} fontWeight={fontWeight} fontSize={'13px'} py={'2px'} _hover={{ fontWeight: 'bold' }} >
                   <a href={submenu.url}>{submenu.label}</a>
                </Stack>
-               {submenu && <DropdownGrid submenus={submenu.submenu} />}
+               {submenu && <DropdownSubItems submenus={submenu.submenu} />}
               </>
             </Stack>
         ))}
