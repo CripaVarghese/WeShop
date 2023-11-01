@@ -1,4 +1,4 @@
-export const menOptions = {
+export const womenOptions = {
   navColumns: [
     {
       column: "column_one",
@@ -8,46 +8,50 @@ export const menOptions = {
           categories: [
             {
               header: {
-                label: "TopWear",
+                label: "Indian & Fusion Wear",
                 url: "/men",
               },
               menuItems: [
                 {
-                  label: "T-Shirts",
-                  url: "/men",
-                },
-                {
-                  label: "Casual Shirts",
+                  label: "Kurtas & Suits",
                   url: "#",
                 },
                 {
-                  label: "Formal Shirts",
+                  label: "Kurtis, Tunics & Tops",
                   url: "#",
                 },
                 {
-                  label: "Sweatshirts",
+                  label: "Sarees",
                   url: "#",
                 },
                 {
-                  label: "Sweaters",
+                  label: "Ethnic Wear",
+                  url: "#",
+                },
+                {
+                  label: "Leggings, Salwars & Churidars",
+                  url: "#",
+                },
+                {
+                  label: "Skirts & Palazzos",
+                  url: "#",
+                },
+                {
+                  label: "Dress Materials",
+                  url: "#",
+                },
+                {
+                  label: "Lehenga Cholis",
+                  url: "#",
+                },
+                {
+                  label: "Dupattas & Shawls",
                   url: "#",
                 },
                 {
                   label: "Jackets",
                   url: "#",
-                },
-                {
-                  label: "Blazers & Coats",
-                  url: "#",
-                },
-                {
-                  label: "Suits",
-                  url: "#",
-                },
-                {
-                  label: "Rain Jackets",
-                  url: "#",
-                },
+                }
               ],
             },
           ],
@@ -57,27 +61,20 @@ export const menOptions = {
           categories: [
             {
               header: {
-                label: "Indian & Festive Wear",
+                label: "Belts, Scarves & More",
                 url: "/men",
               },
-              menuItems: [
-                {
-                  label: "Kurtas & Kurta Sets",
-                  url: "#",
-                },
-                {
-                  label: "Sherwanis",
-                  url: "#",
-                },
-                {
-                  label: "Nehru Jackets",
-                  url: "#",
-                },
-                {
-                  label: "Dhotis",
-                  url: "#",
-                },
-              ],
+            },
+          ],
+        },
+        {
+          navGroup: "navGroup_three",
+          categories: [
+            {
+              header: {
+                label: "Watches & Wearables",
+                url: "/men",
+              },
             },
           ],
         },
@@ -92,61 +89,56 @@ export const menOptions = {
           categories: [
             {
               header: {
-                label: "Bottomwear",
+                label: "Western Wear",
                 url: "/men",
               },
               menuItems: [
+                {
+                  label: "Tops",
+                  url: "#",
+                },
+                {
+                  label: "Tshirts",
+                  url: "#",
+                },
                 {
                   label: "Jeans",
                   url: "#",
                 },
                 {
-                  label: "Casual Trousers",
+                  label: "Trousers & Capris",
                   url: "#",
                 },
                 {
-                  label: "Formal Trousers",
+                  label: "Shorts & Skirts",
                   url: "#",
                 },
                 {
-                  label: "Shorts",
+                  label: "Co-ords",
                   url: "#",
                 },
                 {
-                  label: "Track Pants & Joggers",
-                  url: "#",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          navGroup: "navGroup_two",
-          categories: [
-            {
-              header: {
-                label: "Innerwear & Sleepwear",
-                url: "/men",
-              },
-              menuItems: [
-                {
-                  label: "Briefs & Trunks",
+                  label: "Playsuits",
                   url: "#",
                 },
                 {
-                  label: "Boxers",
+                  label: "Jumpsuits",
                   url: "#",
                 },
                 {
-                  label: "Vests",
+                  label: "Shrugs",
                   url: "#",
                 },
                 {
-                  label: "Sleepwear & Loungewear",
+                  label: "Sweaters & Sweatshirts",
                   url: "#",
                 },
                 {
-                  label: "Thermals",
+                  label: "Jackets & Coats",
+                  url: "#",
+                },
+                {
+                  label: "Blazers & Waistcoats",
                   url: "#",
                 },
               ],
@@ -160,7 +152,7 @@ export const menOptions = {
               header: {
                 label: "Plus size",
                 url: "/men",
-              },
+              }
             },
           ],
         },
@@ -175,39 +167,9 @@ export const menOptions = {
           categories: [
             {
               header: {
-                label: "Footwear",
+                label: "Maternity",
                 url: "/men",
               },
-              menuItems: [
-                {
-                  label: "Casual Shoes",
-                  url: "#",
-                },
-                {
-                  label: "Sports Shoes",
-                  url: "#",
-                },
-                {
-                  label: "Formal Shoes",
-                  url: "#",
-                },
-                {
-                  label: "Sneakers",
-                  url: "#",
-                },
-                {
-                  label: "Sandals & Floaters",
-                  url: "#",
-                },
-                {
-                  label: "Flip Flops",
-                  url: "#",
-                },
-                {
-                  label: "Socks",
-                  url: "#",
-                },
-              ],
             },
           ],
         },
@@ -216,7 +178,7 @@ export const menOptions = {
           categories: [
             {
               header: {
-                label: "Personal Care & Grooming",
+                label: "sunglasses & Frames",
                 url: "/men",
               },
             },
@@ -227,20 +189,60 @@ export const menOptions = {
           categories: [
             {
               header: {
-                label: "Sunglasses & Frames",
+                label: "Footwear",
                 url: "/men",
               },
+              menuItems: [
+                {
+                  label: "Flats",
+                  url: "#",
+                },
+                {
+                  label: "Casual Shoes",
+                  url: "#",
+                },
+                {
+                  label: "Heels",
+                  url: "#",
+                },
+                {
+                  label: "Boots",
+                  url: "#",
+                },
+                {
+                  label: "Sports Shoes & Floaters",
+                  url: "#",
+                },
+              ],
             },
           ],
         },
         {
-          navGroup: "navGroup_five",
+          navGroup: "navGroup_four",
           categories: [
             {
               header: {
-                label: "Watches",
+                label: "Sports & Active Wear",
                 url: "/men",
               },
+              menuItems: [
+                {
+                  label: "Clothing",
+                  url: "#",
+                },
+                {
+                  label: "Footwear",
+                  url: "#",
+                },
+                {
+                  label: "Sports Accessories",
+                  url: "#",
+                },
+                {
+                  label: "Sports Equipment",
+                  url: "#",
+                },
+              ],
             },
           ],
         },
@@ -255,48 +257,47 @@ export const menOptions = {
           categories: [
             {
               header: {
-                label: "Sports & Active Wear",
+                label: "Lingerie & Sleepwear",
                 url: "/men",
               },
               menuItems: [
                 {
-                  label: "Sports Shoes",
+                  label: "Bra",
                   url: "#",
                 },
                 {
-                  label: "Sports Sandals",
+                  label: "Briefs",
                   url: "#",
                 },
                 {
-                  label: "Active T-Shirts",
+                  label: "Shapewear",
                   url: "#",
                 },
                 {
-                  label: "Track Pants & Shorts",
-                  url: "#",
-                },
-                {
-                  label: "Tracksuits",
-                  url: "#",
-                },
-                {
-                  label: "Jackets & Sweatshirts",
-                  url: "#",
-                },
-                {
-                  label: "Sports Accessories",
+                  label: " Sleepwear & Loungewear",
                   url: "#",
                 },
                 {
                   label: "Swimwear",
                   url: "#",
                 },
+                {
+                  label: "Camisoles & Thermals",
+                  url: "#",
+                },
               ],
             },
           ],
         },
+        
+      ],
+    },
+
+    {
+      column: "column_fifth",
+      categories: [
         {
-          navGroup: "navGroup_two",
+          navGroup: "navGroup_one",
           categories: [
             {
               header: {
@@ -324,67 +325,25 @@ export const menOptions = {
             },
           ],
         },
-      ],
-    },
-
-    {
-      column: "column_five",
-      categories: [
         {
-          navGroup: "navGroup_one",
+          navGroup: "navGroup_two",
           categories: [
             {
               header: {
-                label: "Fashion Accessories",
+                label: "Jewellery",
                 url: "/men",
               },
               menuItems: [
                 {
-                  label: "Wallets",
+                  label: "Fashion Jewellery",
                   url: "#",
                 },
                 {
-                  label: "Belts",
+                  label: "Fine Jewellery",
                   url: "#",
                 },
                 {
-                  label: "Perfumes & Body Mists",
-                  url: "#",
-                },
-                {
-                  label: "Trimmers",
-                  url: "#",
-                },
-                {
-                  label: "Deodorants",
-                  url: "#",
-                },
-                {
-                  label: "Ties, Cuffurls & Pocket Squares",
-                  url: "#",
-                },
-                {
-                  label: "Accessory Gift Sets",
-                  url: "#",
-                },
-                {
-                  label: "Caps & Hats",
-                  url: "#",
-                },
-                {
-                  label: "Mufflers, Scarves & Gloves",
-                  url: "#",
-                },
-                {
-                  label: "Phone Cases",
-                  url: "#",
-                },
-                {
-                  label: "Rings & Wristwear",
-                  url: "#",
-                },
-                {
-                  label: "Helmets",
+                  label: "Earrings",
                   url: "#",
                 },
               ],
@@ -392,18 +351,29 @@ export const menOptions = {
           ],
         },
         {
-          navGroup: "navGroup_two",
+          navGroup: "navGroup_three",
           categories: [
             {
               header: {
-                label: "Bags & Backpacks",
+                label: "Backpacks",
                 url: "/men",
               },
             },
           ],
         },
         {
-          navGroup: "navGroup_three",
+          navGroup: "navGroup_four",
+          categories: [
+            {
+              header: {
+                label: "Handbags, Bags & Wallets",
+                url: "/men",
+              },
+            },
+          ],
+        },
+        {
+          navGroup: "navGroup_five",
           categories: [
             {
               header: {
