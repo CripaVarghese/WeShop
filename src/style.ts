@@ -1,5 +1,16 @@
-const font = {
+export const font = {
   fontSize: "xs",
+  smBold: {
+    fontSize: "sm",
+    fontWeight: "bold",
+  },
+};
+
+export const categoryStyles = {
+  headingStyle: {
+    fontSize: "xs",
+    fontWeight: "bold",
+  },
 };
 
 export const footerStyles = {
@@ -11,9 +22,4 @@ export const footerStyles = {
     color: "#7A7C88",
     fontSize: "sm",
   },
-};
-
-export const style = {
-  font,
-  footerStyles,
 };
