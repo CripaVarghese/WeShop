@@ -7,7 +7,7 @@ import Price from "./Price";
 
 const Sidebar = () => {
   return (
-    <Stack width={"250px"}>
+    <Stack width={"18%"}>
       <Stack>
         <Categories />
         <Divider />
