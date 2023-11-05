@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <Box
       display={"flex"}
-      backgroundColor={"#FBFAFC"}
+      backgroundColor={"#FAFBFC"}
       w={"100%"}
       justifyContent={"center"}
     >

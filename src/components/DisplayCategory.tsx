@@ -1,7 +1,7 @@
-import React from "react";
+import { Stack } from "@chakra-ui/react";
 
 const DisplayCategory = () => {
-  return <div>Display Category</div>;
+  return <Stack>DisplayCategory</Stack>;
 };
 
 export default DisplayCategory;
