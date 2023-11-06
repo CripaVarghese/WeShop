@@ -1,6 +1,5 @@
 import { Divider, Stack, Text, HStack, Box } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
-
 import Sidebar from "./sidebar/Sidebar";
 import { font } from "../style";
 import DisplayCategory from "./DisplayCategory";
@@ -58,9 +57,9 @@ const Category = () => {
         </HStack>
       </Stack>
       <Divider />
-      <HStack w={"100%"}>
+      <HStack w={"100%"} alignItems={"flex-start"}>
         <Sidebar />
-        <Stack height="430px" marginStart="0">
+        <Stack height="500px" marginStart="0">
           <Divider orientation="vertical" />
         </Stack>
         <DisplayCategory />

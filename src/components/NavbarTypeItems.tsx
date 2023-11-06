@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { HStack, Text } from "@chakra-ui/react";
 import DropdownNavItems from "./DropdownNavItems";
 import { CategoryOptions } from "../constants/navbarOptionsData";
 
 const NavbarTypeItems = ({ data }: { data: CategoryOptions }) => {
-  const [dropdown, setDropdown] = useState(false);
   const [open, setOpen] = React.useState(false);
 
   return (
