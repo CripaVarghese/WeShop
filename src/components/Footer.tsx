@@ -1,4 +1,12 @@
-import { Stack, HStack, Text, Box, Image, IconButton } from "@chakra-ui/react";
+import {
+  Stack,
+  HStack,
+  Text,
+  Box,
+  Image,
+  IconButton,
+  chakra,
+} from "@chakra-ui/react";
 import online_Data from "../footerData/online_Data";
 import usefulLinks_Data from "../footerData/usefulLinks_Data";
 import policy from "../footerData/policy_Data";
@@ -50,22 +58,23 @@ const Footer = () => {
         </Stack>
 
         <Stack flexDirection={"row"} w={"69%"}>
-          <Stack w={"40%"}>
+          <Stack w={"45%"}>
             <Stack>
               <Text {...footerStyles.headingStyle}>
                 EXPERIENCE MYNTRA APP ON MOBILE
               </Text>
-              <Stack flexDirection={"row"}>
+              <Stack
+                flexDirection={"row"}
+                w={"40%"}
+                h={"50px"}
+                gap={3}
+                justifyContent={"space-between"}
+              >
                 <Image
                   marginTop={"0.5rem"}
-                  w={"20%"}
                   src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
                 />
-                <Image
-                  w={"25%"}
-                  // marginTop={'0rem'}
-                  src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"
-                />
+                <Image src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png" />
               </Stack>
             </Stack>
             <Stack>
@@ -95,22 +104,42 @@ const Footer = () => {
             </Stack>
           </Stack>
 
-          <Stack w={"40%"}>
-            <Stack flexDirection={"row"}>
+          <Stack w={"37%"} gap={"3"}>
+            <Stack flexDirection={"row"} gap={"4"}>
               <Image
-                boxSize={"14"}
+                w={"48px"}
+                h="40px"
+                mt={"8px"}
                 src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png"
               />
-              <Text>
-                100% ORIGINAL guarantee for all products at myntra.com
+              <Text {...footerStyles.listItemStyle}>
+                <chakra.span
+                  color={"black"}
+                  fontWeight={"bold"}
+                  fontSize={"sm"}
+                >
+                  100% ORIGINAL
+                </chakra.span>{" "}
+                guarantee for all products at myntra.com
               </Text>
             </Stack>
-            <Stack flexDirection={"row"}>
+            <Stack flexDirection={"row"} gap={"4"}>
               <Image
-                boxSize={"14"}
+                w={"48px"}
+                h="40px"
+                mt={"8px"}
                 src="https://assets.myntassets.com/assets/images/retaillabs/2023/5/22/becb1b16-86cc-4e78-bdc7-7801c17947831684737106127-Return-Window-image.png"
               />
-              <Text>Return within 14days of receiving your order</Text>
+              <Text {...footerStyles.listItemStyle}>
+                <chakra.span
+                  color={"black"}
+                  fontWeight={"bold"}
+                  fontSize={"sm"}
+                >
+                  Return within 14days
+                </chakra.span>{" "}
+                of receiving your order
+              </Text>
             </Stack>
           </Stack>
         </Stack>
