@@ -13,14 +13,14 @@ const DisplayCategory = () => {
     setIsHovering(false);
   };
   return (
-    <Stack w={"80%"} h={"420px"} p={"20px"}>
+    <Stack w={"80%"} h={"400px"} p={"20px"}>
       <Grid
         templateColumns="repeat(5, 1fr)"
         gap={5}
         h={"100%"}
+        position={"relative"}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
-        position={"relative"}
       >
         <GridItem
           w="100%"
@@ -42,8 +42,8 @@ const DisplayCategory = () => {
             </Text>
           </Stack>
         </GridItem>
+        {/* {isHovering && <Wishlist />} */}
       </Grid>
-      {isHovering && <Wishlist />}
     </Stack>
   );
 };
