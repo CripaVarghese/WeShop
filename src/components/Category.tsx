@@ -3,8 +3,22 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 import Sidebar from "./sidebar/Sidebar";
 import { font } from "../style";
 import DisplayCategory from "./DisplayCategory";
+import Recommendation from "./Recommendation";
+import { useState } from "react";
+import { recommendationMenu } from "../constants/recommendation";
+import { CategoryOptions } from "../constants/navbarOptionsData";
+import Bundles from "./Bundles";
 
-const Category = () => {
+const Category = ({ data }: { data: CategoryOptions }) => {
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  };
   return (
     <Stack pt={100} w={"100%"}>
       <Stack w={"100%"} alignItems={"center"}>
@@ -30,22 +44,16 @@ const Category = () => {
             FILTERS
           </Text>
           <HStack {...font} w={"65%"}>
-            <HStack justifyContent={"space-between"} w={"30%"}>
-              <HStack>
-                <Text>Bundles</Text>
-                <ChevronDownIcon />
-              </HStack>
-              <HStack>
-                <Text>Country of Origin</Text>
-                <ChevronDownIcon />
-              </HStack>
-              <HStack>
-                <Text>Size</Text>
-                <ChevronDownIcon />
-              </HStack>
-            </HStack>
+            <Bundles />
           </HStack>
-          <Box p={"10px 15px"} border={"1px solid #D7D9DC"} w={"17%"}>
+          <Box
+            p={"10px 15px"}
+            border={"1px solid #D7D9DC"}
+            w={"17%"}
+            position={"relative"}
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
+          >
             <HStack {...font} justifyContent={"space-between"}>
               <HStack>
                 <Text>Sort by: </Text>
@@ -54,6 +62,7 @@ const Category = () => {
               <ChevronDownIcon />
             </HStack>
           </Box>
+          {isHovering && <Recommendation data={recommendationMenu} />}
         </HStack>
       </Stack>
       <Divider />
