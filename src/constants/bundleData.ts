@@ -20,7 +20,7 @@ export const bundleData: bundleDataType = {
           url: "#",
         },
         {
-          label: "Bundle Item",
+          label: "Single styles",
           url: "#",
         },
       ],
@@ -30,11 +30,11 @@ export const bundleData: bundleDataType = {
       header: "Country of Origin",
       menuItem: [
         {
-          label: "Bundle",
+          label: "All countries",
           url: "#",
         },
         {
-          label: "Bundle",
+          label: "India",
           url: "#",
         },
       ],
