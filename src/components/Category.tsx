@@ -43,9 +43,9 @@ const Category = ({ data }: { data: CategoryOptions }) => {
           <Text {...font.smBold} w={"17.5%"}>
             FILTERS
           </Text>
-          <HStack {...font} w={"65%"}>
-            <Bundles />
-          </HStack>
+
+          <Bundles />
+
           <Box
             p={"10px 15px"}
             border={"1px solid #D7D9DC"}
