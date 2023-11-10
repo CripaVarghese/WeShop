@@ -1,5 +1,6 @@
 export interface bundleDataType {
   menu: {
+    id: string;
     header: string;
     menuItem: {
       label: string;
@@ -11,7 +12,8 @@ export interface bundleDataType {
 export const bundleData: bundleDataType = {
   menu: [
     {
-      header: "bundle",
+      id: "bundle",
+      header: "Bundle",
       menuItem: [
         {
           label: "Bundle Item",
@@ -24,19 +26,21 @@ export const bundleData: bundleDataType = {
       ],
     },
     {
+      id: "country",
       header: "Country of Origin",
       menuItem: [
         {
-          label: "Bundle Item",
+          label: "Bundle",
           url: "#",
         },
         {
-          label: "Bundle Item",
+          label: "Bundle",
           url: "#",
         },
       ],
     },
     {
+      id: "size",
       header: "Size",
       menuItem: [
         {
