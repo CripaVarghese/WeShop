@@ -1,3 +1,5 @@
+import { womenOptions } from "./womenDropdownOptions";
+
 interface Navigation {
   label: string; // TopWear
   url?: string; // /top-wear
@@ -12,6 +14,7 @@ type NavColumn = NavGroup[];
 export interface CategoryOptions {
   navContents: {
     header: {
+      id: string;
       label: string;
       url: string;
     };
@@ -38,6 +41,7 @@ export const navbarOptionsData: CategoryOptions = {
   navContents: [
     {
       header: {
+        id: "men",
         label: "MEN",
         url: "/men",
       },
