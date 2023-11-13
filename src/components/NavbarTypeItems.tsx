@@ -5,12 +5,13 @@ import { CategoryOptions } from "../constants/navbarOptionsData";
 
 const NavbarTypeItems = ({ data }: { data: CategoryOptions }) => {
   const [open, setOpen] = React.useState(false);
+  const [selectedMenuId, setSelectedMenuId] = React.useState(null);
 
   return (
     <HStack w={"35%"} justifyContent={"space-between"}>
-      {data.navContents.map((navContent, navContentIndex) => (
+      {data.navContents.map((navContent) => (
         <Text
-          key={navContentIndex}
+          key={navContent.header.id}
           fontSize={"xs"}
           fontWeight={"bold"}
           margin={"0"}
