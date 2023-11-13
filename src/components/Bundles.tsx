@@ -6,9 +6,14 @@ import { font } from "../style";
 import { bundleData } from "../constants/bundleData";
 
 const Bundles = () => {
-  const [open, setOpen] = React.useState(false);
-  const handleClick = () => {
-    setOpen(!open);
+  const [selectedMenuId, setSelectedMenuId] = React.useState(null);
+
+  const handleClick = (id: string) => {
+    if (selectedMenuId === id) {
+      setSelectedMenuId(null); // Close menu if it's already open
+    } else {
+      setSelectedMenuId(id);
+    }
   };
   return (
     <HStack {...font} w={"65%"}>
@@ -20,12 +25,16 @@ const Bundles = () => {
               key={item.id}
               borderRadius={"15px"}
               _hover={{ bgColor: "#F5F5F5" }}
-              onClick={handleClick}
+              onClick={() => handleClick(item.id)}
             >
               <Text>{item.header}</Text>
               <ChevronDownIcon />
             </HStack>
-            {open ? <BundleMenu data={item?.menuItem} /> : ""}
+            {selectedMenuId === item.id ? (
+              <BundleMenu data={item.menuItem} />
+            ) : (
+              ""
+            )}
           </>
         ))}
       </HStack>
@@ -34,3 +43,7 @@ const Bundles = () => {
 };
 
 export default Bundles;
+
+// const handleClick = () => {
+//   setOpen(!open);
+// };
