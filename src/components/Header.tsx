@@ -21,6 +21,7 @@ import DrawerContentDisplay from "./DrawerContentDisplay";
 import NavbarTypeItems from "./NavbarTypeItems";
 import { navbarOptionsData } from "../constants/navbarOptionsData";
 import { HiOutlineShoppingBag } from "react-icons/Hi";
+import { CiHeart } from "react-icons/ci";
 
 const Header = () => {
   const [dropdown, setDropdown] = useState(false);
@@ -90,7 +91,7 @@ const Header = () => {
               <IconButton
                 p={"0"}
                 m={"0"}
-                icon={<FaShoppingCart fontSize="1.25rem" onClick={onOpen} />}
+                icon={<CiHeart size={25} />}
                 aria-label=""
                 title="Add to cart"
                 _hover={{
