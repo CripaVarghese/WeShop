@@ -1,6 +1,6 @@
 export interface bundleDataType {
   menu: {
-    id: string;
+    id: string | null;
     header: string;
     menuItem: {
       label: string;
