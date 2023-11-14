@@ -1,6 +1,6 @@
 export interface recommendationMenuType {
   menuItems: {
-    header: string;
+    label: string;
     url: string;
   }[];
 }
@@ -8,32 +8,32 @@ export interface recommendationMenuType {
 export const recommendationMenu: recommendationMenuType = {
   menuItems: [
     {
-      header: "Recommended",
+      label: "Recommended",
       url: "#",
     },
     {
-      header: "What's New",
+      label: "What's New",
       url: "#",
     },
     {
-      header: "Popularity",
+      label: "Popularity",
       url: "#",
     },
     {
-      header: "Better Discount",
+      label: "Better Discount",
       url: "#",
     },
     {
-      header: "Price: High to Low",
+      label: "Price: High to Low",
       url: "#",
     },
 
     {
-      header: "Price: Low to High",
+      label: "Price: Low to High",
       url: "#",
     },
     {
-      header: "Customer Rating",
+      label: "Customer Rating",
       url: "#",
     },
   ],

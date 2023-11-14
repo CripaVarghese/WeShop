@@ -20,7 +20,7 @@ const Recommendation = ({ data }: { data: recommendationMenuType }) => {
         {data.menuItems.map((item, itemIndex) => (
           <a href={item.url} key={itemIndex}>
             <Text fontSize={"13px"} fontWeight={"normal"}>
-              {item.header}
+              {item.label}
             </Text>
           </a>
         ))}
