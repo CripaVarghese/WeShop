@@ -8,7 +8,7 @@ import {
   Input,
   IconButton,
   Avatar,
-  Text,
+  Image,
   Box,
 } from "@chakra-ui/react";
 import { useState } from "react";
@@ -19,6 +19,7 @@ import { HiOutlineShoppingBag } from "react-icons/Hi";
 import { CiHeart } from "react-icons/ci";
 import ProfileMenu from "./ProfileMenu";
 import { profileMenu } from "../constants/profileMenu";
+import logo from "../constants/Images/logo.png";
 
 const Header = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -50,7 +51,7 @@ const Header = () => {
         w={"95%"}
       >
         <HStack fontSize="md">
-          <Text
+          {/* <Text
             m="0"
             p="0"
             bgGradient="linear(to-l, #7928CA, #FF0980)"
@@ -59,7 +60,8 @@ const Header = () => {
             fontWeight="extrabold"
           >
             WeShop
-          </Text>
+          </Text> */}
+          <Image src={logo} w={"100px"} />
         </HStack>
         <NavbarTypeItems data={navbarOptionsData} />
         <InputGroup
