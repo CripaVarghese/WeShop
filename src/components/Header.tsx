@@ -7,27 +7,29 @@ import {
   InputLeftElement,
   Input,
   IconButton,
-  Drawer,
-  DrawerOverlay,
   Avatar,
   Text,
   Box,
-  useDisclosure,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
-import { FaShoppingCart } from "react-icons/fa";
+import { useState } from "react";
 import { FiSearch } from "react-icons/fi";
-import DrawerContentDisplay from "./DrawerContentDisplay";
 import NavbarTypeItems from "./NavbarTypeItems";
 import { navbarOptionsData } from "../constants/navbarOptionsData";
 import { HiOutlineShoppingBag } from "react-icons/Hi";
 import { CiHeart } from "react-icons/ci";
+import ProfileMenu from "./ProfileMenu";
+import { profileMenu } from "../constants/profileMenu";
 
 const Header = () => {
-  const [dropdown, setDropdown] = useState(false);
-  const [open, setOpen] = React.useState(false);
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [isHovering, setIsHovering] = useState(false);
 
+  const handleMouseOver = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  };
   return (
     <Box
       as="header"
@@ -82,10 +84,13 @@ const Header = () => {
             justifyContent={"space-between"}
             alignItems={"center"}
             w={"100%"}
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
           >
             <Stack>
               <Avatar boxSize="6" />
               {/* <Text fontSize={'xs'}>Profile</Text> */}
+              {isHovering && <ProfileMenu data={profileMenu} />}
             </Stack>
             <Stack>
               <IconButton
@@ -93,27 +98,18 @@ const Header = () => {
                 m={"0"}
                 icon={<CiHeart size={25} />}
                 aria-label=""
-                title="Add to cart"
-                _hover={{
-                  bgGradient: "linear(to-r, yellow.500, green.500)",
-                  color: "white",
-                }}
+                title="wishlist"
+
+                // _hover={{}}
               />
               {/* <Text fontSize={'xs'}>Profile</Text> */}
             </Stack>
-            <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
-              <DrawerOverlay />
-              <DrawerContentDisplay />
-            </Drawer>
             <Stack>
               <IconButton
                 icon={<HiOutlineShoppingBag fontSize="1.50rem" />}
                 aria-label=""
-                title="Orders"
-                _hover={{
-                  bgGradient: "linear(to-r, teal.500, pink.500)",
-                  color: "white",
-                }}
+                title="bag"
+                // _hover={{}}
               />
               {/* <Text fontSize={'xs'}>Profile</Text> */}
             </Stack>
