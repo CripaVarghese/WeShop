@@ -8,13 +8,14 @@ import { bundleData } from "../constants/bundleData";
 const Bundles = () => {
   const [selectedMenuId, setSelectedMenuId] = React.useState(null);
 
-  const handleClick = (id: string) => {
+  const handleClick = (id: string | null) => {
     if (selectedMenuId === id) {
-      setSelectedMenuId(null); // Close menu if it's already open
+      setSelectedMenuId(null);
     } else {
       setSelectedMenuId(id);
     }
   };
+
   return (
     <HStack {...font} w={"65%"}>
       <HStack w={"35%"} position="relative">
@@ -43,7 +44,3 @@ const Bundles = () => {
 };
 
 export default Bundles;
-
-// const handleClick = () => {
-//   setOpen(!open);
-// };
