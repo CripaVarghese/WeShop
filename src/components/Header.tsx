@@ -51,16 +51,6 @@ const Header = () => {
         w={"95%"}
       >
         <HStack fontSize="md">
-          {/* <Text
-            m="0"
-            p="0"
-            bgGradient="linear(to-l, #7928CA, #FF0980)"
-            bgClip="text"
-            fontSize="2xl"
-            fontWeight="extrabold"
-          >
-            WeShop
-          </Text> */}
           <Image src={logo} w={"100px"} />
         </HStack>
         <NavbarTypeItems data={navbarOptionsData} />
