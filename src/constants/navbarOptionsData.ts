@@ -1,6 +1,6 @@
 interface Navigation {
-  label: string; // TopWear
-  url?: string; // /top-wear
+  label: string;
+  url?: string;
 }
 interface NavGroup {
   header: Navigation;
@@ -55,44 +55,44 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "TopWear",
-                    url: "/men",
+                    url: "/top_wear",
                   },
                   menuItems: [
                     {
                       label: "T-Shirts",
-                      url: "/men",
+                      url: "/t_shirts",
                     },
                     {
                       label: "Casual Shirts",
-                      url: "#",
+                      url: "/casual_shirts",
                     },
                     {
                       label: "Formal Shirts",
-                      url: "#",
+                      url: "/formal_shirts",
                     },
                     {
                       label: "Sweatshirts",
-                      url: "#",
+                      url: "/sweatshirts",
                     },
                     {
                       label: "Sweaters",
-                      url: "#",
+                      url: "/sweaters",
                     },
                     {
                       label: "Jackets",
-                      url: "#",
+                      url: "/jackets",
                     },
                     {
                       label: "Blazers & Coats",
-                      url: "#",
+                      url: "/blazers_coats",
                     },
                     {
                       label: "Suits",
-                      url: "#",
+                      url: "/suits",
                     },
                     {
                       label: "Rain Jackets",
-                      url: "#",
+                      url: "/rain_jackets",
                     },
                   ],
                 },
@@ -104,24 +104,24 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Indian & Festive Wear",
-                    url: "/men",
+                    url: "/indian_festive_wear",
                   },
                   menuItems: [
                     {
                       label: "Kurtas & Kurta Sets",
-                      url: "#",
+                      url: "/kurtas_kurta_sets",
                     },
                     {
                       label: "Sherwanis",
-                      url: "#",
+                      url: "/sherwanis",
                     },
                     {
                       label: "Nehru Jackets",
-                      url: "#",
+                      url: "/nehru_jackets",
                     },
                     {
                       label: "Dhotis",
-                      url: "#",
+                      url: "/dhotis",
                     },
                   ],
                 },
@@ -139,28 +139,28 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Bottomwear",
-                    url: "/men",
+                    url: "/bottomwear",
                   },
                   menuItems: [
                     {
                       label: "Jeans",
-                      url: "#",
+                      url: "/jeans",
                     },
                     {
                       label: "Casual Trousers",
-                      url: "#",
+                      url: "/casual_trousers",
                     },
                     {
                       label: "Formal Trousers",
-                      url: "#",
+                      url: "/formal_trousers",
                     },
                     {
                       label: "Shorts",
-                      url: "#",
+                      url: "/shorts",
                     },
                     {
                       label: "Track Pants & Joggers",
-                      url: "#",
+                      url: "/track_pants_joggers",
                     },
                   ],
                 },
@@ -172,28 +172,28 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Innerwear & Sleepwear",
-                    url: "/men",
+                    url: "/innerwear_sleepwear",
                   },
                   menuItems: [
                     {
                       label: "Briefs & Trunks",
-                      url: "#",
+                      url: "/briefs_trunks",
                     },
                     {
                       label: "Boxers",
-                      url: "#",
+                      url: "/boxers",
                     },
                     {
                       label: "Vests",
-                      url: "#",
+                      url: "/vests",
                     },
                     {
                       label: "Sleepwear & Loungewear",
-                      url: "#",
+                      url: "/sleepwear_loungewear",
                     },
                     {
                       label: "Thermals",
-                      url: "#",
+                      url: "/thermals",
                     },
                   ],
                 },
@@ -205,7 +205,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Plus size",
-                    url: "/men",
+                    url: "/plus_size",
                   },
                 },
               ],
@@ -222,36 +222,36 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Footwear",
-                    url: "/men",
+                    url: "/footwear",
                   },
                   menuItems: [
                     {
                       label: "Casual Shoes",
-                      url: "#",
+                      url: "/casual_shoes",
                     },
                     {
                       label: "Sports Shoes",
-                      url: "#",
+                      url: "/sports_shoes",
                     },
                     {
                       label: "Formal Shoes",
-                      url: "#",
+                      url: "/formal_shoes",
                     },
                     {
                       label: "Sneakers",
-                      url: "#",
+                      url: "/sneakers",
                     },
                     {
                       label: "Sandals & Floaters",
-                      url: "#",
+                      url: "/sandals_floaters",
                     },
                     {
                       label: "Flip Flops",
-                      url: "#",
+                      url: "/flip_flops",
                     },
                     {
                       label: "Socks",
-                      url: "#",
+                      url: "/socks",
                     },
                   ],
                 },
@@ -263,7 +263,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Personal Care & Grooming",
-                    url: "/men",
+                    url: "/personal_care_grooming",
                   },
                 },
               ],
@@ -274,7 +274,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Sunglasses & Frames",
-                    url: "/men",
+                    url: "/sunglasses_frames",
                   },
                 },
               ],
@@ -285,7 +285,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Watches",
-                    url: "/men",
+                    url: "/watches",
                   },
                 },
               ],
@@ -302,40 +302,40 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Sports & Active Wear",
-                    url: "/men",
+                    url: "/sports_active_wear",
                   },
                   menuItems: [
                     {
                       label: "Sports Shoes",
-                      url: "#",
+                      url: "/sports_shoes",
                     },
                     {
                       label: "Sports Sandals",
-                      url: "#",
+                      url: "/sports_sandals",
                     },
                     {
                       label: "Active T-Shirts",
-                      url: "#",
+                      url: "/active_t_shirts",
                     },
                     {
                       label: "Track Pants & Shorts",
-                      url: "#",
+                      url: "/track_pants_shorts",
                     },
                     {
                       label: "Tracksuits",
-                      url: "#",
+                      url: "/tracksuits",
                     },
                     {
                       label: "Jackets & Sweatshirts",
-                      url: "#",
+                      url: "/jackets_sweatshirts",
                     },
                     {
                       label: "Sports Accessories",
-                      url: "#",
+                      url: "/sports_accessories",
                     },
                     {
                       label: "Swimwear",
-                      url: "#",
+                      url: "/swimwear",
                     },
                   ],
                 },
@@ -347,24 +347,24 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Gadgets",
-                    url: "/men",
+                    url: "/gadgets",
                   },
                   menuItems: [
                     {
                       label: "Smart Wearables",
-                      url: "#",
+                      url: "/smart_wearables",
                     },
                     {
                       label: "Fitness Gadgets",
-                      url: "#",
+                      url: "/fitness_gadgets",
                     },
                     {
                       label: "Headphones",
-                      url: "#",
+                      url: "/headphones",
                     },
                     {
                       label: "Speakers",
-                      url: "#",
+                      url: "/speakers",
                     },
                   ],
                 },
@@ -382,56 +382,56 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Fashion Accessories",
-                    url: "/men",
+                    url: "/fashion_accessories",
                   },
                   menuItems: [
                     {
                       label: "Wallets",
-                      url: "#",
+                      url: "/wallets",
                     },
                     {
                       label: "Belts",
-                      url: "#",
+                      url: "/belts",
                     },
                     {
                       label: "Perfumes & Body Mists",
-                      url: "#",
+                      url: "/perfumes_body_mists",
                     },
                     {
                       label: "Trimmers",
-                      url: "#",
+                      url: "/trimmers",
                     },
                     {
                       label: "Deodorants",
-                      url: "#",
+                      url: "/deodorants",
                     },
                     {
                       label: "Ties, Cuffurls & Pocket Squares",
-                      url: "#",
+                      url: "/ties_cuffurls_pocket_squares",
                     },
                     {
                       label: "Accessory Gift Sets",
-                      url: "#",
+                      url: "/accessory_gift_sets",
                     },
                     {
                       label: "Caps & Hats",
-                      url: "#",
+                      url: "/caps_hats",
                     },
                     {
                       label: "Mufflers, Scarves & Gloves",
-                      url: "#",
+                      url: "/mufflers_scarves_gloves",
                     },
                     {
                       label: "Phone Cases",
-                      url: "#",
+                      url: "/phone_cases",
                     },
                     {
                       label: "Rings & Wristwear",
-                      url: "#",
+                      url: "/rings_wristwear",
                     },
                     {
                       label: "Helmets",
-                      url: "#",
+                      url: "/helmets",
                     },
                   ],
                 },
@@ -443,7 +443,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Bags & Backpacks",
-                    url: "/men",
+                    url: "/bags_backpacks",
                   },
                 },
               ],
@@ -454,7 +454,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Luggages & Trolleys",
-                    url: "/men",
+                    url: "/luggages_trolleys",
                   },
                 },
               ],
@@ -481,48 +481,48 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Indian & Fusion Wear",
-                    url: "/men",
+                    url: "/indian_fusion_wear",
                   },
                   menuItems: [
                     {
                       label: "Kurtas & Suits",
-                      url: "#",
+                      url: "/kurtas_suits",
                     },
                     {
                       label: "Kurtis, Tunics & Tops",
-                      url: "#",
+                      url: "/kurtis_tunics_tops",
                     },
                     {
                       label: "Sarees",
-                      url: "#",
+                      url: "/sarees",
                     },
                     {
                       label: "Ethnic Wear",
-                      url: "#",
+                      url: "/ethnic_wear",
                     },
                     {
                       label: "Leggings, Salwars & Churidars",
-                      url: "#",
+                      url: "/leggings_salwars_churidars",
                     },
                     {
                       label: "Skirts & Palazzos",
-                      url: "#",
+                      url: "/skirts_palazzos",
                     },
                     {
                       label: "Dress Materials",
-                      url: "#",
+                      url: "/dress_materials",
                     },
                     {
                       label: "Lehenga Cholis",
-                      url: "#",
+                      url: "/lehenga_cholis",
                     },
                     {
                       label: "Dupattas & Shawls",
-                      url: "#",
+                      url: "/dupattas_shawls",
                     },
                     {
                       label: "Jackets",
-                      url: "#",
+                      url: "/jackets",
                     },
                   ],
                 },
@@ -534,7 +534,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Belts, Scarves & More",
-                    url: "/men",
+                    url: "/belts_scarves_more",
                   },
                 },
               ],
@@ -545,7 +545,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Watches & Wearables",
-                    url: "/men",
+                    url: "/watches_wearables",
                   },
                 },
               ],
@@ -562,56 +562,56 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Western Wear",
-                    url: "/men",
+                    url: "/western_wear",
                   },
                   menuItems: [
                     {
                       label: "Tops",
-                      url: "#",
+                      url: "/tops",
                     },
                     {
                       label: "Tshirts",
-                      url: "#",
+                      url: "/tshirts",
                     },
                     {
                       label: "Jeans",
-                      url: "#",
+                      url: "/jeans",
                     },
                     {
                       label: "Trousers & Capris",
-                      url: "#",
+                      url: "/trousers_capris",
                     },
                     {
                       label: "Shorts & Skirts",
-                      url: "#",
+                      url: "/shorts_skirts",
                     },
                     {
                       label: "Co-ords",
-                      url: "#",
+                      url: "/co_ords",
                     },
                     {
                       label: "Playsuits",
-                      url: "#",
+                      url: "/playsuits",
                     },
                     {
                       label: "Jumpsuits",
-                      url: "#",
+                      url: "/jumpsuits",
                     },
                     {
                       label: "Shrugs",
-                      url: "#",
+                      url: "/shrugs",
                     },
                     {
                       label: "Sweaters & Sweatshirts",
-                      url: "#",
+                      url: "/sweaters_sweatshirts",
                     },
                     {
                       label: "Jackets & Coats",
-                      url: "#",
+                      url: "/jackets_coats",
                     },
                     {
                       label: "Blazers & Waistcoats",
-                      url: "#",
+                      url: "/blazers_waistcoats",
                     },
                   ],
                 },
@@ -623,7 +623,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Plus size",
-                    url: "/men",
+                    url: "/plus_size",
                   },
                 },
               ],
@@ -640,7 +640,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Maternity",
-                    url: "/men",
+                    url: "/maternity",
                   },
                 },
               ],
@@ -651,7 +651,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "sunglasses & Frames",
-                    url: "/men",
+                    url: "/sunglasses_frames",
                   },
                 },
               ],
@@ -662,28 +662,28 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Footwear",
-                    url: "/men",
+                    url: "/footwear",
                   },
                   menuItems: [
                     {
                       label: "Flats",
-                      url: "#",
+                      url: "/flats",
                     },
                     {
                       label: "Casual Shoes",
-                      url: "#",
+                      url: "/casual_shoes",
                     },
                     {
                       label: "Heels",
-                      url: "#",
+                      url: "/heels",
                     },
                     {
                       label: "Boots",
-                      url: "#",
+                      url: "/boots",
                     },
                     {
                       label: "Sports Shoes & Floaters",
-                      url: "#",
+                      url: "/sports_shoes_floaters",
                     },
                   ],
                 },
@@ -695,24 +695,24 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Sports & Active Wear",
-                    url: "/men",
+                    url: "/sports_active_wear",
                   },
                   menuItems: [
                     {
                       label: "Clothing",
-                      url: "#",
+                      url: "/clothing",
                     },
                     {
                       label: "Footwear",
-                      url: "#",
+                      url: "/footwear",
                     },
                     {
                       label: "Sports Accessories",
-                      url: "#",
+                      url: "/sports_accessories",
                     },
                     {
                       label: "Sports Equipment",
-                      url: "#",
+                      url: "/sports_equipment",
                     },
                   ],
                 },
@@ -730,32 +730,32 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Lingerie & Sleepwear",
-                    url: "/men",
+                    url: "/lingerie_sleepwear",
                   },
                   menuItems: [
                     {
                       label: "Bra",
-                      url: "#",
+                      url: "/bra",
                     },
                     {
                       label: "Briefs",
-                      url: "#",
+                      url: "/briefs",
                     },
                     {
                       label: "Shapewear",
-                      url: "#",
+                      url: "/shapewear",
                     },
                     {
                       label: " Sleepwear & Loungewear",
-                      url: "#",
+                      url: "/sleepwear_loungewear",
                     },
                     {
                       label: "Swimwear",
-                      url: "#",
+                      url: "/swimwear",
                     },
                     {
                       label: "Camisoles & Thermals",
-                      url: "#",
+                      url: "/camisoles_thermals",
                     },
                   ],
                 },
@@ -773,24 +773,24 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Gadgets",
-                    url: "/men",
+                    url: "/gadgets",
                   },
                   menuItems: [
                     {
                       label: "Smart Wearables",
-                      url: "#",
+                      url: "/smart_wearables",
                     },
                     {
                       label: "Fitness Gadgets",
-                      url: "#",
+                      url: "/fitness_gadgets",
                     },
                     {
                       label: "Headphones",
-                      url: "#",
+                      url: "/headphones",
                     },
                     {
                       label: "Speakers",
-                      url: "#",
+                      url: "/speakers",
                     },
                   ],
                 },
@@ -802,20 +802,20 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Jewellery",
-                    url: "/men",
+                    url: "/jewellery",
                   },
                   menuItems: [
                     {
                       label: "Fashion Jewellery",
-                      url: "#",
+                      url: "/fashion_jewellery",
                     },
                     {
                       label: "Fine Jewellery",
-                      url: "#",
+                      url: "/fine_jewellery",
                     },
                     {
                       label: "Earrings",
-                      url: "#",
+                      url: "/earrings",
                     },
                   ],
                 },
@@ -827,7 +827,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Backpacks",
-                    url: "/men",
+                    url: "/backpacks",
                   },
                 },
               ],
@@ -838,7 +838,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Handbags, Bags & Wallets",
-                    url: "/men",
+                    url: "/handbags_bags_wallets",
                   },
                 },
               ],
@@ -849,7 +849,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Luggages & Trolleys",
-                    url: "/men",
+                    url: "/luggages_trolleys",
                   },
                 },
               ],
@@ -876,60 +876,60 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Boys Clothing",
-                    url: "",
+                    url: "/boys_clothing",
                   },
                   menuItems: [
                     {
                       label: "T-Shirts",
-                      url: "",
+                      url: "/t_shirts",
                     },
                     {
                       label: "Shirts",
-                      url: "",
+                      url: "/shirts",
                     },
                     {
                       label: "Shorts",
-                      url: "",
+                      url: "/shorts",
                     },
                     {
                       label: "Jeans",
-                      url: "",
+                      url: "/jeans",
                     },
                     {
                       label: "Trousers",
-                      url: "",
+                      url: "/trousers",
                     },
                     {
                       label: "Clothing Sets",
-                      url: "",
+                      url: "/clothing_sets",
                     },
                     {
                       label: "Ethnic Wear",
-                      url: "",
+                      url: "/ethnic_wear",
                     },
                     {
                       label: "Track Pants & Pyjamas",
-                      url: "",
+                      url: "/track_pants_pyjamas",
                     },
                     {
                       label: "Jacket, Sweater & Sweatshirts",
-                      url: "",
+                      url: "/jacket_sweater_sweatshirts",
                     },
                     {
                       label: "Party Wear",
-                      url: "",
+                      url: "/party_wear",
                     },
                     {
                       label: "Innerwear & Thermals",
-                      url: "",
+                      url: "/innerwear_thermals",
                     },
                     {
                       label: "Nightwear & Loungewear",
-                      url: "",
+                      url: "/nightwear_loungewear",
                     },
                     {
                       label: "Value Packs",
-                      url: "",
+                      url: "/value_packs",
                     },
                   ],
                 },
@@ -946,68 +946,68 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Girls Clothing",
-                    url: "",
+                    url: "/girls_clothing",
                   },
                   menuItems: [
                     {
                       label: "Dresses",
-                      url: "",
+                      url: "/dresses",
                     },
                     {
                       label: "Tops",
-                      url: "",
+                      url: "/tops",
                     },
                     {
                       label: "Tshirts",
-                      url: "",
+                      url: "/tshirts",
                     },
                     {
                       label: "Clothing Sets",
-                      url: "",
+                      url: "/clothing_sets",
                     },
                     {
                       label: "Lehenga choli",
-                      url: "",
+                      url: "/lehenga_choli",
                     },
                     {
                       label: "Kurta Sets",
-                      url: "",
+                      url: "/kurta_sets",
                     },
                     {
                       label: "Party wear",
-                      url: "",
+                      url: "/party_wear",
                     },
                     {
                       label: "Dungarees & Jumpsuits",
-                      url: "",
+                      url: "/dungarees_jumpsuits",
                     },
                     {
                       label: "Skirts & shorts",
-                      url: "",
+                      url: "/skirts_shorts",
                     },
                     {
                       label: "Tights & Leggings",
-                      url: "",
+                      url: "/tights_leggings",
                     },
                     {
                       label: "Jeans, Trousers & Capris",
-                      url: "",
+                      url: "/jeans_trousers_capris",
                     },
                     {
                       label: "Jacket, Sweater & Sweatshirts",
-                      url: "",
+                      url: "/jacket_sweater_sweatshirts",
                     },
                     {
                       label: "Innerwear & Thermals",
-                      url: "",
+                      url: "/innerwear_thermals",
                     },
                     {
                       label: "Nightwear & Loungewear",
-                      url: "",
+                      url: "/nightwear_loungewear",
                     },
                     {
                       label: "Value Packs",
-                      url: "",
+                      url: "/value_packs",
                     },
                   ],
                 },
@@ -1024,40 +1024,40 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Footwear",
-                    url: "",
+                    url: "/footwear",
                   },
                   menuItems: [
                     {
                       label: "Casual Shoes",
-                      url: "",
+                      url: "/casual_shoes",
                     },
                     {
                       label: "Flipflops",
-                      url: "",
+                      url: "/flipflops",
                     },
                     {
                       label: "Sports Shoes",
-                      url: "",
+                      url: "/sports_shoes",
                     },
                     {
                       label: "Flats",
-                      url: "",
+                      url: "/flats",
                     },
                     {
                       label: "Sandals",
-                      url: "",
+                      url: "/sandals",
                     },
                     {
                       label: "Heels",
-                      url: "",
+                      url: "/heels",
                     },
                     {
                       label: "School Shoes",
-                      url: "",
+                      url: "/school_shoes",
                     },
                     {
                       label: "Socks",
-                      url: "",
+                      url: "/socks",
                     },
                   ],
                 },
@@ -1069,28 +1069,28 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Toys & Games",
-                    url: "",
+                    url: "/toys_games",
                   },
                   menuItems: [
                     {
                       label: "T-Shirts",
-                      url: "",
+                      url: "/t_shirts",
                     },
                     {
                       label: "Learning & Development",
-                      url: "",
+                      url: "/learning_development",
                     },
                     {
                       label: "Activity Toys",
-                      url: "",
+                      url: "/activity_toys",
                     },
                     {
                       label: "Soft Toys",
-                      url: "",
+                      url: "/soft_toys",
                     },
                     {
                       label: "Action Figure / Play set",
-                      url: "",
+                      url: "/action_figure_play_set",
                     },
                   ],
                 },
@@ -1108,44 +1108,44 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Infants",
-                    url: "",
+                    url: "/infants",
                   },
                   menuItems: [
                     {
                       label: "Bodysuits",
-                      url: "",
+                      url: "/bodysuits",
                     },
                     {
                       label: "Rompers & Sleepsuits",
-                      url: "",
+                      url: "/rompers_sleepsuits",
                     },
                     {
                       label: "Clothing Sets",
-                      url: "",
+                      url: "/clothing_sets",
                     },
                     {
                       label: "Tshirts & Tops",
-                      url: "",
+                      url: "/tshirts_tops",
                     },
                     {
                       label: "Dresses",
-                      url: "",
+                      url: "/dresses",
                     },
                     {
                       label: "Bottom wear",
-                      url: "",
+                      url: "/bottom_wear",
                     },
                     {
                       label: "Winter Wear",
-                      url: "",
+                      url: "/winter_wear",
                     },
                     {
                       label: "Innerwear & Sleepwear",
-                      url: "",
+                      url: "/innerwear_sleepwear",
                     },
                     {
                       label: "Infant Care",
-                      url: "",
+                      url: "/infant_care",
                     },
                   ],
                 },
@@ -1157,7 +1157,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Home & Bath",
-                    url: "",
+                    url: "/home_bath",
                   },
                 },
               ],
@@ -1168,7 +1168,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Personal Care",
-                    url: "",
+                    url: "/personal_care",
                   },
                 },
               ],
@@ -1185,36 +1185,36 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Kids Accessories",
-                    url: "",
+                    url: "/kids_accessories",
                   },
                   menuItems: [
                     {
                       label: "Bags & Backpacks",
-                      url: "",
+                      url: "/bags_backpacks",
                     },
                     {
                       label: "Watches",
-                      url: "",
+                      url: "/watches",
                     },
                     {
                       label: "Jewellery & Hair accessory",
-                      url: "",
+                      url: "/jewellery_hair_accessory",
                     },
                     {
                       label: "Sunglasses",
-                      url: "",
+                      url: "/sunglasses",
                     },
                     {
                       label: "Masks & Protective Gears",
-                      url: "",
+                      url: "/masks_protective_gears",
                     },
                     {
                       label: "Caps & Hats",
-                      url: "",
+                      url: "/caps_hats",
                     },
                     {
                       label: "T-Shirts",
-                      url: "",
+                      url: "/t_shirts",
                     },
                   ],
                 },
@@ -1226,40 +1226,40 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Brands",
-                    url: "",
+                    url: "/brands",
                   },
                   menuItems: [
                     {
                       label: "H&M",
-                      url: "",
+                      url: "/h_m",
                     },
                     {
                       label: "Max Kids",
-                      url: "",
+                      url: "/max_kids",
                     },
                     {
                       label: "Pantaloons",
-                      url: "",
+                      url: "/pantaloons",
                     },
                     {
                       label: "United Colors Of Benetton Kids",
-                      url: "",
+                      url: "/united_colors_of_benetton_kids",
                     },
                     {
                       label: "YK",
-                      url: "",
+                      url: "/yk",
                     },
                     {
                       label: "U.S. Polo Assn. Kids",
-                      url: "",
+                      url: "/u_s_polo_assn_kids",
                     },
                     {
                       label: "Mothercare",
-                      url: "",
+                      url: "/mothercare",
                     },
                     {
                       label: "HRX",
-                      url: "",
+                      url: "/hrx",
                     },
                   ],
                 },
@@ -1275,7 +1275,7 @@ export const navbarOptionsData: CategoryOptions = {
       header: {
         id: "home_and_living",
         label: "HOME & LIVING",
-        url: "/home_and_living",
+        url: "/home_living",
         color: "#f2c210",
       },
       navColumns: [
@@ -1288,44 +1288,44 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Bed Linen & Furnishing",
-                    url: "/men",
+                    url: "/bed_linen_furnishing",
                   },
                   menuItems: [
                     {
                       label: "T-Shirts",
-                      url: "/men",
+                      url: "/t_shirts",
                     },
                     {
                       label: "Casual Shirts",
-                      url: "#",
+                      url: "/casual_shirts",
                     },
                     {
                       label: "Formal Shirts",
-                      url: "#",
+                      url: "/formal_shirts",
                     },
                     {
                       label: "Sweatshirts",
-                      url: "#",
+                      url: "/sweatshirts",
                     },
                     {
                       label: "Sweaters",
-                      url: "#",
+                      url: "/sweaters",
                     },
                     {
                       label: "Jackets",
-                      url: "#",
+                      url: "/jackets",
                     },
                     {
                       label: "Blazers & Coats",
-                      url: "#",
+                      url: "/blazers_coats",
                     },
                     {
                       label: "Suits",
-                      url: "#",
+                      url: "/suits",
                     },
                     {
                       label: "Rain Jackets",
-                      url: "#",
+                      url: "/rain_jackets",
                     },
                   ],
                 },
@@ -1337,24 +1337,24 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Indian & Festive Wear",
-                    url: "/men",
+                    url: "/indian_festive_wear",
                   },
                   menuItems: [
                     {
                       label: "Kurtas & Kurta Sets",
-                      url: "#",
+                      url: "/kurtas_kurta_sets",
                     },
                     {
                       label: "Sherwanis",
-                      url: "#",
+                      url: "/sherwanis",
                     },
                     {
                       label: "Nehru Jackets",
-                      url: "#",
+                      url: "/nehru_jackets",
                     },
                     {
                       label: "Dhotis",
-                      url: "#",
+                      url: "/dhotis",
                     },
                   ],
                 },
@@ -1372,28 +1372,28 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Bath",
-                    url: "/men",
+                    url: "/bath",
                   },
                   menuItems: [
                     {
                       label: "Jeans",
-                      url: "#",
+                      url: "/jeans",
                     },
                     {
                       label: "Casual Trousers",
-                      url: "#",
+                      url: "/casual_trousers",
                     },
                     {
                       label: "Formal Trousers",
-                      url: "#",
+                      url: "/formal_trousers",
                     },
                     {
                       label: "Shorts",
-                      url: "#",
+                      url: "/shorts",
                     },
                     {
                       label: "Track Pants & Joggers",
-                      url: "#",
+                      url: "/track_pants_joggers",
                     },
                   ],
                 },
@@ -1405,28 +1405,28 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Innerwear & Sleepwear",
-                    url: "/men",
+                    url: "/innerwear_sleepwear",
                   },
                   menuItems: [
                     {
                       label: "Briefs & Trunks",
-                      url: "#",
+                      url: "/briefs_trunks",
                     },
                     {
                       label: "Boxers",
-                      url: "#",
+                      url: "/boxers",
                     },
                     {
                       label: "Vests",
-                      url: "#",
+                      url: "/vests",
                     },
                     {
                       label: "Sleepwear & Loungewear",
-                      url: "#",
+                      url: "/sleepwear_loungewear",
                     },
                     {
                       label: "Thermals",
-                      url: "#",
+                      url: "/thermals",
                     },
                   ],
                 },
@@ -1438,7 +1438,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Plus size",
-                    url: "/men",
+                    url: "/plus_size",
                   },
                 },
               ],
@@ -1455,36 +1455,36 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Home Décor",
-                    url: "/men",
+                    url: "/home_décor",
                   },
                   menuItems: [
                     {
                       label: "Casual Shoes",
-                      url: "#",
+                      url: "/casual_shoes",
                     },
                     {
                       label: "Sports Shoes",
-                      url: "#",
+                      url: "/sports_shoes",
                     },
                     {
                       label: "Formal Shoes",
-                      url: "#",
+                      url: "/formal_shoes",
                     },
                     {
                       label: "Sneakers",
-                      url: "#",
+                      url: "/sneakers",
                     },
                     {
                       label: "Sandals & Floaters",
-                      url: "#",
+                      url: "/sandals_floaters",
                     },
                     {
                       label: "Flip Flops",
-                      url: "#",
+                      url: "/flip_flops",
                     },
                     {
                       label: "Socks",
-                      url: "#",
+                      url: "/socks",
                     },
                   ],
                 },
@@ -1496,7 +1496,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Personal Care & Grooming",
-                    url: "/men",
+                    url: "/personal_care_grooming",
                   },
                 },
               ],
@@ -1507,7 +1507,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Sunglasses & Frames",
-                    url: "/men",
+                    url: "/sunglasses_frames",
                   },
                 },
               ],
@@ -1518,7 +1518,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Watches",
-                    url: "/men",
+                    url: "/watches",
                   },
                 },
               ],
@@ -1535,40 +1535,40 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Sports & Active Wear",
-                    url: "/men",
+                    url: "/sports_active_wear",
                   },
                   menuItems: [
                     {
                       label: "Sports Shoes",
-                      url: "#",
+                      url: "/sports_shoes",
                     },
                     {
                       label: "Sports Sandals",
-                      url: "#",
+                      url: "/sports_sandals",
                     },
                     {
                       label: "Active T-Shirts",
-                      url: "#",
+                      url: "/active_t_shirts",
                     },
                     {
                       label: "Track Pants & Shorts",
-                      url: "#",
+                      url: "/track_pants_shorts",
                     },
                     {
                       label: "Tracksuits",
-                      url: "#",
+                      url: "/tracksuits",
                     },
                     {
                       label: "Jackets & Sweatshirts",
-                      url: "#",
+                      url: "/jackets_sweatshirts",
                     },
                     {
                       label: "Sports Accessories",
-                      url: "#",
+                      url: "/sports_accessories",
                     },
                     {
                       label: "Swimwear",
-                      url: "#",
+                      url: "/swimwear",
                     },
                   ],
                 },
@@ -1580,24 +1580,24 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Gadgets",
-                    url: "/men",
+                    url: "/gadgets",
                   },
                   menuItems: [
                     {
                       label: "Smart Wearables",
-                      url: "#",
+                      url: "/smart_wearables",
                     },
                     {
                       label: "Fitness Gadgets",
-                      url: "#",
+                      url: "/fitness_gadgets",
                     },
                     {
                       label: "Headphones",
-                      url: "#",
+                      url: "/headphones",
                     },
                     {
                       label: "Speakers",
-                      url: "#",
+                      url: "/speakers",
                     },
                   ],
                 },
@@ -1615,56 +1615,56 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Fashion Accessories",
-                    url: "/men",
+                    url: "/fashion_accessories",
                   },
                   menuItems: [
                     {
                       label: "Wallets",
-                      url: "#",
+                      url: "/wallets",
                     },
                     {
                       label: "Belts",
-                      url: "#",
+                      url: "/belts",
                     },
                     {
                       label: "Perfumes & Body Mists",
-                      url: "#",
+                      url: "/perfumes_body_mists",
                     },
                     {
                       label: "Trimmers",
-                      url: "#",
+                      url: "/trimmers",
                     },
                     {
                       label: "Deodorants",
-                      url: "#",
+                      url: "/deodorants",
                     },
                     {
                       label: "Ties, Cuffurls & Pocket Squares",
-                      url: "#",
+                      url: "/ties_cuffurls_pocket_squares",
                     },
                     {
                       label: "Accessory Gift Sets",
-                      url: "#",
+                      url: "/accessory_gift_sets",
                     },
                     {
                       label: "Caps & Hats",
-                      url: "#",
+                      url: "/caps_hats",
                     },
                     {
                       label: "Mufflers, Scarves & Gloves",
-                      url: "#",
+                      url: "/mufflers_scarves_gloves",
                     },
                     {
                       label: "Phone Cases",
-                      url: "#",
+                      url: "/phone_cases",
                     },
                     {
                       label: "Rings & Wristwear",
-                      url: "#",
+                      url: "/rings_wristwear",
                     },
                     {
                       label: "Helmets",
-                      url: "#",
+                      url: "/helmets",
                     },
                   ],
                 },
@@ -1676,7 +1676,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Bags & Backpacks",
-                    url: "/men",
+                    url: "/bags_backpacks",
                   },
                 },
               ],
@@ -1687,7 +1687,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Luggages & Trolleys",
-                    url: "/men",
+                    url: "/luggages_trolleys",
                   },
                 },
               ],
@@ -1715,44 +1715,44 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Makeup",
-                    url: "/men",
+                    url: "/makeup",
                   },
                   menuItems: [
                     {
                       label: "T-Shirts",
-                      url: "/men",
+                      url: "/t_shirts",
                     },
                     {
                       label: "Casual Shirts",
-                      url: "#",
+                      url: "/casual_shirts",
                     },
                     {
                       label: "Formal Shirts",
-                      url: "#",
+                      url: "/formal_shirts",
                     },
                     {
                       label: "Sweatshirts",
-                      url: "#",
+                      url: "/sweatshirts",
                     },
                     {
                       label: "Sweaters",
-                      url: "#",
+                      url: "/sweaters",
                     },
                     {
                       label: "Jackets",
-                      url: "#",
+                      url: "/jackets",
                     },
                     {
                       label: "Blazers & Coats",
-                      url: "#",
+                      url: "/blazers_coats",
                     },
                     {
                       label: "Suits",
-                      url: "#",
+                      url: "/suits",
                     },
                     {
                       label: "Rain Jackets",
-                      url: "#",
+                      url: "/rain_jackets",
                     },
                   ],
                 },
@@ -1764,24 +1764,24 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Indian & Festive Wear",
-                    url: "/men",
+                    url: "/indian_festive_wear",
                   },
                   menuItems: [
                     {
                       label: "Kurtas & Kurta Sets",
-                      url: "#",
+                      url: "/kurtas_kurta_sets",
                     },
                     {
                       label: "Sherwanis",
-                      url: "#",
+                      url: "/sherwanis",
                     },
                     {
                       label: "Nehru Jackets",
-                      url: "#",
+                      url: "/nehru_jackets",
                     },
                     {
                       label: "Dhotis",
-                      url: "#",
+                      url: "/dhotis",
                     },
                   ],
                 },
@@ -1799,28 +1799,28 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Skincare, Bath & Body",
-                    url: "/men",
+                    url: "/skincare_bath_body",
                   },
                   menuItems: [
                     {
                       label: "Jeans",
-                      url: "#",
+                      url: "/jeans",
                     },
                     {
                       label: "Casual Trousers",
-                      url: "#",
+                      url: "/casual_trousers",
                     },
                     {
                       label: "Formal Trousers",
-                      url: "#",
+                      url: "/formal_trousers",
                     },
                     {
                       label: "Shorts",
-                      url: "#",
+                      url: "/shorts",
                     },
                     {
                       label: "Track Pants & Joggers",
-                      url: "#",
+                      url: "/track_pants_joggers",
                     },
                   ],
                 },
@@ -1832,28 +1832,28 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Innerwear & Sleepwear",
-                    url: "/men",
+                    url: "/innerwear_sleepwear",
                   },
                   menuItems: [
                     {
                       label: "Briefs & Trunks",
-                      url: "#",
+                      url: "/briefs_trunks",
                     },
                     {
                       label: "Boxers",
-                      url: "#",
+                      url: "/boxers",
                     },
                     {
                       label: "Vests",
-                      url: "#",
+                      url: "/vests",
                     },
                     {
                       label: "Sleepwear & Loungewear",
-                      url: "#",
+                      url: "/sleepwear_loungewear",
                     },
                     {
                       label: "Thermals",
-                      url: "#",
+                      url: "/thermals",
                     },
                   ],
                 },
@@ -1865,7 +1865,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Plus size",
-                    url: "/men",
+                    url: "/plus_size",
                   },
                 },
               ],
@@ -1882,36 +1882,36 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Footwear",
-                    url: "/men",
+                    url: "/footwear",
                   },
                   menuItems: [
                     {
                       label: "Haircare",
-                      url: "#",
+                      url: "/haircare",
                     },
                     {
                       label: "Sports Shoes",
-                      url: "#",
+                      url: "/sports_shoes",
                     },
                     {
                       label: "Formal Shoes",
-                      url: "#",
+                      url: "/formal_shoes",
                     },
                     {
                       label: "Sneakers",
-                      url: "#",
+                      url: "/sneakers",
                     },
                     {
                       label: "Sandals & Floaters",
-                      url: "#",
+                      url: "/sandals_floaters",
                     },
                     {
                       label: "Flip Flops",
-                      url: "#",
+                      url: "/flip_flops",
                     },
                     {
                       label: "Socks",
-                      url: "#",
+                      url: "/socks",
                     },
                   ],
                 },
@@ -1923,7 +1923,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Personal Care & Grooming",
-                    url: "/men",
+                    url: "/personal_care_grooming",
                   },
                 },
               ],
@@ -1934,7 +1934,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Sunglasses & Frames",
-                    url: "/men",
+                    url: "/sunglasses_frames",
                   },
                 },
               ],
@@ -1945,7 +1945,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Watches",
-                    url: "/men",
+                    url: "/watches",
                   },
                 },
               ],
@@ -1962,40 +1962,40 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Appliances",
-                    url: "/men",
+                    url: "/appliances",
                   },
                   menuItems: [
                     {
                       label: "Sports Shoes",
-                      url: "#",
+                      url: "/sports_shoes",
                     },
                     {
                       label: "Sports Sandals",
-                      url: "#",
+                      url: "/sports_sandals",
                     },
                     {
                       label: "Active T-Shirts",
-                      url: "#",
+                      url: "/active_t_shirts",
                     },
                     {
                       label: "Track Pants & Shorts",
-                      url: "#",
+                      url: "/track_pants_shorts",
                     },
                     {
                       label: "Tracksuits",
-                      url: "#",
+                      url: "/tracksuits",
                     },
                     {
                       label: "Jackets & Sweatshirts",
-                      url: "#",
+                      url: "/jackets_sweatshirts",
                     },
                     {
                       label: "Sports Accessories",
-                      url: "#",
+                      url: "/sports_accessories",
                     },
                     {
                       label: "Swimwear",
-                      url: "#",
+                      url: "/swimwear",
                     },
                   ],
                 },
@@ -2007,24 +2007,24 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Gadgets",
-                    url: "/men",
+                    url: "/gadgets",
                   },
                   menuItems: [
                     {
                       label: "Smart Wearables",
-                      url: "#",
+                      url: "/smart_wearables",
                     },
                     {
                       label: "Fitness Gadgets",
-                      url: "#",
+                      url: "/fitness_gadgets",
                     },
                     {
                       label: "Headphones",
-                      url: "#",
+                      url: "/headphones",
                     },
                     {
                       label: "Speakers",
-                      url: "#",
+                      url: "/speakers",
                     },
                   ],
                 },
@@ -2042,56 +2042,56 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Top Brands",
-                    url: "/men",
+                    url: "/top_brands",
                   },
                   menuItems: [
                     {
                       label: "Wallets",
-                      url: "#",
+                      url: "/wallets",
                     },
                     {
                       label: "Belts",
-                      url: "#",
+                      url: "/belts",
                     },
                     {
                       label: "Perfumes & Body Mists",
-                      url: "#",
+                      url: "/perfumes_body_mists",
                     },
                     {
                       label: "Trimmers",
-                      url: "#",
+                      url: "/trimmers",
                     },
                     {
                       label: "Deodorants",
-                      url: "#",
+                      url: "/deodorants",
                     },
                     {
                       label: "Ties, Cuffurls & Pocket Squares",
-                      url: "#",
+                      url: "/ties_cuffurls_pocket_squares",
                     },
                     {
                       label: "Accessory Gift Sets",
-                      url: "#",
+                      url: "/accessory_gift_sets",
                     },
                     {
                       label: "Caps & Hats",
-                      url: "#",
+                      url: "/caps_hats",
                     },
                     {
                       label: "Mufflers, Scarves & Gloves",
-                      url: "#",
+                      url: "/mufflers_scarves_gloves",
                     },
                     {
                       label: "Phone Cases",
-                      url: "#",
+                      url: "/phone_cases",
                     },
                     {
                       label: "Rings & Wristwear",
-                      url: "#",
+                      url: "/rings_wristwear",
                     },
                     {
                       label: "Helmets",
-                      url: "#",
+                      url: "/helmets",
                     },
                   ],
                 },
@@ -2103,7 +2103,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Bags & Backpacks",
-                    url: "/men",
+                    url: "/bags_backpacks",
                   },
                 },
               ],
@@ -2114,7 +2114,7 @@ export const navbarOptionsData: CategoryOptions = {
                 {
                   header: {
                     label: "Luggages & Trolleys",
-                    url: "/men",
+                    url: "/luggages_trolleys",
                   },
                 },
               ],
