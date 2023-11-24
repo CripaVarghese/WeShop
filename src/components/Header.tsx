@@ -7,21 +7,22 @@ import {
   InputLeftElement,
   Input,
   IconButton,
-  Avatar,
   Image,
   Box,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { FiSearch } from "react-icons/fi";
-import NavbarTypeItems from "./NavbarTypeItems";
 import { navbarOptionsData } from "../constants/navbarOptionsData";
 import { HiOutlineShoppingBag } from "react-icons/Hi";
 import { CiHeart } from "react-icons/ci";
-import ProfileMenu from "./ProfileMenu";
-import { profileMenu } from "../constants/profileMenu";
 import logo from "../constants/Images/logo.png";
+import NavbarTypeItems from "./main-navbar-menu/navbar/NavbarTypeItems";
+import Profile from "./profile/Profile";
+import { useNavigate } from "react-router-dom";
+import Wishlist_Page from "./wishList/Wishlist_Page";
 
 const Header = () => {
+  // const navigate = useNavigate();
   const [isHovering, setIsHovering] = useState(false);
 
   const handleMouseOver = () => {
@@ -76,14 +77,11 @@ const Header = () => {
             justifyContent={"space-between"}
             alignItems={"center"}
             w={"100%"}
+            cursor={"pointer"}
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
           >
-            <Stack>
-              <Avatar boxSize="6" />
-              {/* <Text fontSize={'xs'}>Profile</Text> */}
-              {isHovering && <ProfileMenu data={profileMenu} />}
-            </Stack>
+            <Profile />
             <Stack>
               <IconButton
                 p={"0"}
@@ -91,7 +89,7 @@ const Header = () => {
                 icon={<CiHeart size={25} />}
                 aria-label=""
                 title="wishlist"
-
+                // onClick={() => navigate("/wishlist")}
                 // _hover={{}}
               />
               {/* <Text fontSize={'xs'}>Profile</Text> */}
