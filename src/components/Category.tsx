@@ -6,10 +6,9 @@ import DisplayCategory from "./DisplayCategory";
 import Recommendation from "./Recommendation";
 import { useState } from "react";
 import { recommendationMenu } from "../constants/recommendation";
-import { CategoryOptions } from "../constants/navbarOptionsData";
 import Bundles from "./Bundles";
 
-const Category = ({ data }: { data: CategoryOptions }) => {
+const Category = () => {
   const [isHovering, setIsHovering] = useState(false);
 
   const handleMouseOver = () => {
