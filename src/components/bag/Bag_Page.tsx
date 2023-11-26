@@ -20,7 +20,7 @@ const Bag_Page = () => {
           fontSize={"xs"}
           fontWeight={"bold"}
           border="1px solid "
-          p={"20px 10px"}
+          p={"23px 10px"}
           borderRadius={"none"}
           letterSpacing={1}
         >
