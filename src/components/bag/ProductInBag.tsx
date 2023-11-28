@@ -13,9 +13,13 @@ import { IoMdArrowDropdown } from "react-icons/io";
 const ProductInBag = () => {
   return (
     <Box borderWidth="1px" borderRadius="lg" p={4}>
-      <HStack alignItems={"flex-start"}>
+      <HStack
+        alignItems={"flex-start"}
+        flexDirection={{ base: "column", md: "row" }}
+        gap={{ base: "20px", md: "10px" }}
+      >
         <Image
-          w={"100px"}
+          w={{ base: "100%", md: "100px" }}
           src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12377258/2020/9/11/ce1b7bcb-a65a-4eb0-a317-42ac02718f1e1599798741705UrbanoFashionPrintedMenRoundNeckDarkGreenT-Shirt1.jpg"
         />
         <VStack align="stretch" spacing={1}>
@@ -28,7 +32,10 @@ const ProductInBag = () => {
           <Text fontSize="10px" color={"#94969f"}>
             Sold by: IMPERIAL ONLINE SERVICES - SJIT
           </Text>
-          <HStack justify="space-between" w={"50%"}>
+          <HStack
+            justify="space-between"
+            w={{ base: "65%", md: "100%", lg: "100%" }}
+          >
             <Button
               fontWeight="bold"
               fontSize="xs"
@@ -48,7 +55,11 @@ const ProductInBag = () => {
               <IoMdArrowDropdown />
             </Button>
           </HStack>
-          <Flex align="center" justify="space-between" w="45%">
+          <Flex
+            align="center"
+            justify="space-between"
+            w={{ base: "55%", sm: "25%", md: "70%", lg: "55%", "2xl": "45%" }}
+          >
             <Text fontWeight="bold" fontSize="xs">
               ₹ 850
             </Text>

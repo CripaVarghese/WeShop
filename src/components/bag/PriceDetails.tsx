@@ -11,14 +11,17 @@ import ApplyCouponTag_icon from "../../constants/svg/ApplyCouponTag_icon";
 
 const PriceDetails = () => {
   return (
-    <Box w={"22%"}>
+    <Box w={{ base: "85%", sm: "90%", md: "30%", lg: "22%" }}>
       <VStack spacing={4} w="100%" alignItems={"flex-start"}>
         <Stack w="100%">
           <Text fontSize="11px" fontWeight="bold" color={"#535766"}>
             COUPONS
           </Text>
           <HStack w="100%" justifyContent={"space-between"}>
-            <HStack w="40%" justifyContent={"space-between"}>
+            <HStack
+              w={{ base: "45%", md: "40%" }}
+              justifyContent={"space-between"}
+            >
               <ApplyCouponTag_icon />
               <Text fontSize="xs" fontWeight="bold">
                 Apply Coupons

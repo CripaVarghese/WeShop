@@ -1,39 +1,43 @@
-import {
-  Box,
-  Checkbox,
-  Button,
-  Flex,
-  Divider,
-  HStack,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Checkbox, Flex, Divider, HStack, Text } from "@chakra-ui/react";
 
 const TotalNumber = () => {
   return (
-    <Box pl={4} py={2}>
-      <Flex justify="space-between" mb={4}>
+    <Box
+      borderWidth={{ base: "1px", md: "0px" }}
+      borderRadius={{ base: "lg" }}
+      pl={{ base: "4", md: "4" }}
+      py="20px"
+    >
+      <Flex
+        justifyContent={"space-between"}
+        flexDirection={{ base: "column", md: "row" }}
+        gap={5}
+      >
         <Checkbox fontWeight={"bold"}>
-          <Text fontSize={"sm"}>1/1 ITEMS SELECTED</Text>
+          <Text
+            fontSize={{ base: "xs", sm: "xs", md: "xs", lg: "xs", "2xl": "sm" }}
+          >
+            1/1 ITEMS SELECTED
+          </Text>
         </Checkbox>
         <HStack>
-          <Button
+          <Text
             fontSize={"11px"}
             fontWeight={"bold"}
-            mr={2}
             variant={"ghost"}
             color={"#616472"}
           >
             REMOVE
-          </Button>
+          </Text>
           <Divider orientation="vertical" />
-          <Button
+          <Text
             fontSize={"11px"}
             fontWeight={"bold"}
             variant={"ghost"}
             color={"#616472"}
           >
             MOVE TO WISHLIST
-          </Button>
+          </Text>
         </HStack>
       </Flex>
     </Box>
