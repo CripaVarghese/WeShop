@@ -1,32 +1,37 @@
-import { Button, Stack, Image, Text } from "@chakra-ui/react";
-import bag_empty from "./bag_empty.png";
+import { Stack, Center, Divider } from "@chakra-ui/react";
+import AddToWishlist_Button from "./AddToWishlist_Button";
+import DiscountOffer from "./DiscountOffer";
+import PriceDetails from "./PriceDetails";
+import ProductInBag from "./ProductInBag";
+import TotalNumber from "./TotalNumber";
 
 const Bag_Page = () => {
   return (
-    <Stack h={"85vh"} justifyContent={"center"} alignItems={"center"}>
-      <Stack w={"25%"} alignItems={"center"} justifyContent={"space-between"}>
-        <Image src={bag_empty} />
-        <Stack alignItems={"center"} spacing={1} py="20px">
-          <Text fontSize={"lg"} fontWeight={"bold"}>
-            Hey, it feels so light!
-          </Text>
-          <Text fontSize={"xs"} color={"#979BA2"}>
-            There is nothing in your bag. Let's add some items.
-          </Text>
-        </Stack>
-        <Button
-          color={"#ff3f6c"}
-          variant="outline"
-          fontSize={"xs"}
-          fontWeight={"bold"}
-          border="1px solid "
-          p={"23px 10px"}
-          borderRadius={"none"}
-          letterSpacing={1}
-        >
-          ADD ITEMS FROM WISHLIST
-        </Button>
+    <Stack
+      flexDirection={{ base: "column", md: "row" }}
+      pt={"130px"}
+      pb="50px"
+      w={"100%"}
+      alignItems={{ base: "center", md: "flex-start" }}
+      justifyContent={"center"}
+      spacing={2}
+    >
+      <Stack w={{ base: "85%", sm: "90%", md: "50%", lg: "40%" }}>
+        <DiscountOffer />
+        <TotalNumber />
+        <ProductInBag />
+        <AddToWishlist_Button />
       </Stack>
+      <Center
+        height="50vh"
+        px="10px"
+        flexDirection={{ base: "column", md: "row" }}
+      >
+        <Divider orientation="vertical" />
+        {/* {{ base: "horizontal", md: "vertical" }} */}
+      </Center>
+
+      <PriceDetails />
     </Stack>
   );
 };
