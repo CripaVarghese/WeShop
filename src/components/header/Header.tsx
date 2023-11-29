@@ -11,7 +11,7 @@ import {
 import { useState } from "react";
 import { HiOutlineShoppingBag } from "react-icons/Hi";
 import { CiHeart } from "react-icons/ci";
-import logo from "../constants/Images/logo.png";
+import logo from "../../constants/Images/logo.png";
 import Profile from "../profile/Profile";
 import Hamburger from "../../constants/svg/Hamburger";
 import HeaderDrawer from "./HeaderDrawer";
