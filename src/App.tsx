@@ -1,15 +1,14 @@
 import ShoppingCartProvider from "./context/ShoppingCartContext";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Category from "./components/Category";
-import { navbarOptionsData } from "./constants/navbarOptionsData";
+import Header from "./components/header/Header";
+import Hero from "./components/Hero";
+import { Stack } from "@chakra-ui/react";
 
 function App() {
   return (
     <ShoppingCartProvider>
       <Header />
-      {/* <Hero /> */}
-      <Category data={navbarOptionsData} />
+      <Hero />
       <Footer />
     </ShoppingCartProvider>
   );
