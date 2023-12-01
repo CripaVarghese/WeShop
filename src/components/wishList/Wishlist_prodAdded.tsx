@@ -4,7 +4,7 @@ import Product from "../Product";
 const Wishlist_prodAdded = () => {
   return (
     <Stack w={"100%"} h={"100vh"} alignItems={"center"}>
-      <Stack w={"90%"} h={"400px"} gap={10}>
+      <Stack w={"90%"} h={"400px"} gap={10} mt="130px">
         <Text fontWeight={"700"} fontSize={"16px"}>
           My Wishlist{" "}
           <chakra.span color={"#282828"} fontWeight={"normal"} fontSize={"md"}>
