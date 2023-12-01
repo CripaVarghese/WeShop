@@ -25,12 +25,19 @@ const Footer = () => {
       <Stack
         w={"75%"}
         py={"15"}
-        flexDirection={"row"}
+        flexDirection={{ base: "column-reverse", lg: "row" }}
         justifyContent={"space-between"}
       >
-        <Stack flexDirection={"row"} justifyContent={"space-between"} w={"27%"}>
-          <Stack mt={".4rem"}>
-            <Stack>
+        <Stack
+          flexDirection={{ base: "column-reverse", lg: "row" }}
+          justifyContent={"space-between"}
+          w={{ base: "100%", sm: "27%" }}
+        >
+          <Stack
+            mt={".4rem"}
+            flexDirection={{ base: "column-reverse", lg: "column" }}
+          >
+            <Stack display={{ base: "none", lg: "block" }}>
               <Text {...footerStyles.headingStyle}>ONLINE SHOPPING</Text>
               {online_Data.map((onlineData, onlineDataIndex) => (
                 <Text key={onlineDataIndex} {...footerStyles.listItemStyle}>
@@ -40,26 +47,32 @@ const Footer = () => {
             </Stack>
             <Stack>
               <Text {...footerStyles.headingStyle}>USEFUL LINKS</Text>
-              {usefulLinks_Data.map((linksData, linksDataIndex) => (
-                <Text key={linksDataIndex} {...footerStyles.listItemStyle}>
-                  {linksData.label}
+              //{" "}
+              <Stack flexDirection={{ base: "row", lg: "column" }}>
+                {usefulLinks_Data.map((linksData, linksDataIndex) => (
+                  <Text key={linksDataIndex} {...footerStyles.listItemStyle}>
+                    {linksData.label}
+                  </Text>
+                ))}
+                //{" "}
+              </Stack>
+            </Stack>
+          </Stack>
+          <Stack w={{ base: "100%" }}>
+            <Text {...footerStyles.headingStyle}>CUSTOMER POLICIES</Text>
+            <Stack flexDirection={{ base: "row", lg: "column" }}>
+              {policy.map((policyData, policyDataIndex) => (
+                <Text key={policyDataIndex} {...footerStyles.listItemStyle}>
+                  {policyData.label}
                 </Text>
               ))}
             </Stack>
           </Stack>
-          <Stack>
-            <Text {...footerStyles.headingStyle}>CUSTOMER POLICIES</Text>
-            {policy.map((policyData, policyDataIndex) => (
-              <Text key={policyDataIndex} {...footerStyles.listItemStyle}>
-                {policyData.label}
-              </Text>
-            ))}
-          </Stack>
         </Stack>
 
-        <Stack flexDirection={"row"} w={"69%"}>
+        <Stack flexDirection={"row"} w={{ base: "100%", lg: "69%" }}>
           <Stack w={"45%"}>
-            <Stack>
+            <Stack display={{ base: "none", lg: "block" }}>
               <Text {...footerStyles.headingStyle}>
                 EXPERIENCE MYNTRA APP ON MOBILE
               </Text>
@@ -104,7 +117,7 @@ const Footer = () => {
             </Stack>
           </Stack>
 
-          <Stack w={"37%"} gap={"3"}>
+          <Stack w={"37%"} gap={"3"} display={{ base: "none", lg: "block" }}>
             <Stack flexDirection={"row"} gap={"4"}>
               <Image
                 w={"48px"}
