@@ -1,7 +1,7 @@
 import { Stack, Divider, Text } from "@chakra-ui/react";
 import { profileMenu } from "../../constants/profileMenu";
 
-const ProfileDropdown = () => {
+const ProfileDropdown = ({ onMouseOut }: any) => {
   return (
     <Stack
       position={"absolute"}
@@ -12,6 +12,8 @@ const ProfileDropdown = () => {
       zIndex={"1401"}
       boxShadow={"rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"}
       bg={"white"}
+      onMouseOut={onMouseOut}
+      onClick={onMouseOut}
     >
       {profileMenu.menuItems.map((item) => (
         <>

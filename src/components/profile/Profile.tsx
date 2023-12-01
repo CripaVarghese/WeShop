@@ -15,10 +15,10 @@ const Profile = () => {
 
   return (
     <>
-      <Stack onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+      <Stack onMouseOver={handleMouseOver}>
         <Avatar boxSize="6" />
         {/* <Text fontSize={'xs'}>Profile</Text> */}
-        {isVisible ? <ProfileDropdown /> : ""}
+        {isVisible ? <ProfileDropdown onMouseOut={handleMouseOut} /> : ""}
       </Stack>
     </>
   );
