@@ -1,7 +1,6 @@
 import { Grid, GridItem, Stack } from "@chakra-ui/react";
 import { useState } from "react";
 import Product from "./Product";
-import Wishlist from "./wishList/Wishlist";
 
 const DisplayCategory = () => {
   const [isHovering, setIsHovering] = useState(false);
