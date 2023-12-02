@@ -1,6 +1,6 @@
 import { Grid, GridItem, Stack, Text, chakra } from "@chakra-ui/react";
 import SelectedProduct from "./SelectedProduct";
-import ProductDetails from "../ProductDetails";
+import ProductDetails from "../category/ProductDetails";
 
 const SelectedProductDetails = () => {
   return (
