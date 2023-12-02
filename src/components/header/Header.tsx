@@ -12,14 +12,15 @@ import { useState } from "react";
 import { HiOutlineShoppingBag } from "react-icons/Hi";
 import { CiHeart } from "react-icons/ci";
 import logo from "../../constants/Images/logo.png";
-import Profile from "../profile/Profile";
+import Profile from "./profile/Profile";
 import Hamburger from "../../constants/svg/Hamburger";
 import HeaderDrawer from "./HeaderDrawer";
 import HeaderTypeFilter from "./HeaderTypeFilter";
 import Search_icon from "../../constants/svg/Search_icon";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [isHovering, setIsHovering] = useState(false);
 
@@ -33,22 +34,17 @@ const Header = () => {
   return (
     <Box
       as="header"
-      w={"100%"}
+      w="100vw"
+      h="80px"
       position={"fixed"}
       bg={"white"}
-      zIndex="1"
+      zIndex="2"
       shadow={"lg"}
       display={"flex"}
       justifyContent={"center"}
-      boxShadow={"rgba(0, 0, 0, 0.1) 0px 1px 2px 0px"}
+      boxShadow="0 4px 12px 0 rgba(0,0,0,.05)"
     >
-      <Stack
-        flexDirection="row"
-        alignItems={"center"}
-        h={"20"}
-        w={"95%"}
-        spacing={0}
-      >
+      <Stack flexDirection="row" alignItems={"center"} w={"95%"} spacing={0}>
         <HStack>
           <Button
             variant={"ghost"}
@@ -60,38 +56,36 @@ const Header = () => {
           <HeaderDrawer isOpen={isOpen} onClose={onClose} />
           <Image w={{ base: "200px", md: "150px" }} src={logo} />
         </HStack>
+
         <HeaderTypeFilter />
 
         <HStack>
           <ButtonGroup
+            w={"100%"}
             variant="ghost"
             display={"flex"}
             justifyContent={"space-between"}
             alignItems={"center"}
-            w={"100%"}
             cursor={"pointer"}
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
           >
             <Button
-              aria-label={""}
               display={{ base: "block", lg: "none" }}
               alignItems="center"
               variant={"ghost"}
-              p="0px"
             >
               <Search_icon />
             </Button>
             <Profile />
             <Stack>
               <IconButton
-                p={"0"}
-                m={"0"}
                 icon={<CiHeart size={25} />}
                 aria-label=""
                 title="wishlist"
-                // onClick={() => navigate("/wishlist")}
-                // _hover={{}}
+                _hover={{ variant: "ghost" }}
+                // onClick={() => navigate("/Wishlist_Page")}
+                onClick={() => navigate("/Wishlist_prodAdded")}
               />
               {/* <Text fontSize={'xs'}>Profile</Text> */}
             </Stack>
@@ -100,7 +94,9 @@ const Header = () => {
                 icon={<HiOutlineShoppingBag fontSize="1.50rem" />}
                 aria-label=""
                 title="bag"
-                // _hover={{}}
+                _hover={{ variant: "ghost" }}
+                onClick={() => navigate("/Bag_Page")}
+                // onClick={() => navigate("/Bag_Empty")}
               />
               {/* <Text fontSize={'xs'}>Profile</Text> */}
             </Stack>
