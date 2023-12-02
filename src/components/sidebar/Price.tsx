@@ -1,5 +1,5 @@
 import { Checkbox, Stack, Text } from "@chakra-ui/react";
-import { categoryStyles, font } from "../../style";
+import { categoryStyles, fontStyle } from "../../style";
 
 const Price = () => {
   return (
@@ -12,7 +12,7 @@ const Price = () => {
       <Stack w={"80%"}>
         <Text {...categoryStyles.headingStyle}>PRICE</Text>
         <Checkbox size="md" borderColor={"#C8C7CD"} colorScheme="red">
-          <Text {...font}>1000-2000</Text>
+          <Text {...fontStyle}>1000-2000</Text>
         </Checkbox>
       </Stack>
     </Stack>

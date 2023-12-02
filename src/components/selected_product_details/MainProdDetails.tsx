@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { HiOutlineShoppingBag } from "react-icons/Hi";
 import { CiHeart } from "react-icons/ci";
-import { font } from "../../style";
+import { fontStyle } from "../../style";
 
 const MainProdDetails = () => {
   return (
@@ -27,11 +27,11 @@ const MainProdDetails = () => {
             ₹494{" "}
           </chakra.span>
         </Text>
-        <Text fontSize={"xs"} fontWeight={"bold"} color="#04A784">
+        <Text {...fontStyle.xsBold} color="#04A784">
           inclusive of all taxes
         </Text>
-        <Text {...font.smBold}>MORE COLORS</Text>
-        <Text {...font.smBold}>SELECT SIZE SIZE CHART</Text>
+        <Text {...fontStyle.smBold}>MORE COLORS</Text>
+        <Text {...fontStyle.smBold}>SELECT SIZE SIZE CHART</Text>
         <HStack>
           <Button
             colorScheme="teal"
@@ -70,7 +70,7 @@ const MainProdDetails = () => {
         </HStack>
         <HStack pt={"15px"}>
           <Button
-            {...font.smBold}
+            {...fontStyle.smBold}
             bg={"#FE527A"}
             color={"white"}
             p={"27px 65px"}
@@ -81,7 +81,7 @@ const MainProdDetails = () => {
               title="bag"
               bg={"ghost"}
             />
-            <Text {...font.smBold}>ADD TO BAG</Text>
+            <Text {...fontStyle.smBold}>ADD TO BAG</Text>
           </Button>
           <Button bg={"#525767"} color={"white"} p={"27px 40px"}>
             {/* #525767 */}
@@ -93,7 +93,7 @@ const MainProdDetails = () => {
               title="wishlist"
               bg={"ghost"}
             />
-            <Text {...font.smBold}>WISHLIST</Text>
+            <Text {...fontStyle.smBold}>WISHLIST</Text>
           </Button>
         </HStack>
       </Stack>

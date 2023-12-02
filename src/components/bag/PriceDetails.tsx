@@ -8,6 +8,7 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import ApplyCouponTag_icon from "../../constants/svg/ApplyCouponTag_icon";
+import { fontStyle } from "../../style";
 
 const PriceDetails = () => {
   return (
@@ -23,9 +24,7 @@ const PriceDetails = () => {
               justifyContent={"space-between"}
             >
               <ApplyCouponTag_icon />
-              <Text fontSize="xs" fontWeight="bold">
-                Apply Coupons
-              </Text>
+              <Text {...fontStyle.xsBold}>Apply Coupons</Text>
             </HStack>
             <Button
               variant="outline"
@@ -78,12 +77,8 @@ const PriceDetails = () => {
         </VStack>
         <Divider />
         <HStack justifyContent="space-between" w="100%">
-          <Text fontSize={"xs"} fontWeight="bold">
-            Total Amount
-          </Text>
-          <Text fontSize={"xs"} fontWeight="bold">
-            ₹514
-          </Text>
+          <Text {...fontStyle.xsBold}>Total Amount</Text>
+          <Text {...fontStyle.xsBold}>₹514</Text>
         </HStack>
         <Button
           w="100%"

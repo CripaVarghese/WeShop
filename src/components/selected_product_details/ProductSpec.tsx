@@ -1,5 +1,5 @@
 import { Stack, Text } from "@chakra-ui/react";
-import { font } from "../../style";
+import { fontStyle } from "../../style";
 
 const ProductSpec = () => {
   return (
@@ -12,7 +12,7 @@ const ProductSpec = () => {
           <Text fontSize={"sm"}>{item.des}</Text>
           {item.subHeader.map((subHeader) => (
             <>
-              <Text {...font.smBold}>{subHeader.header}</Text>
+              <Text {...fontStyle.smBold}>{subHeader.header}</Text>
               <Text fontSize={"sm"}>{subHeader?.des}</Text>
             </>
           ))}

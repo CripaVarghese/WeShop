@@ -1,11 +1,11 @@
-import { font } from "../../style";
+import { fontStyle } from "../../style";
 import { Input, Stack, Text } from "@chakra-ui/react";
 
 const DeliveryOptions = () => {
   return (
     <Stack py="20px">
       <Stack>
-        <Text {...font.smBold}>DELIVERY OPTIONS</Text>
+        <Text {...fontStyle.smBold}>DELIVERY OPTIONS</Text>
         <Input type="text" placeholder="Enter a PIN code"></Input>
         <Text fontSize={"xs"}>
           Please enter PIN code to check delivery time & Pay on Delivery

@@ -1,5 +1,5 @@
 import { Checkbox, Stack, Text } from "@chakra-ui/react";
-import { categoryStyles, font } from "../../style";
+import { categoryStyles, fontStyle } from "../../style";
 
 const DiscountRange = () => {
   return (
@@ -12,7 +12,7 @@ const DiscountRange = () => {
       <Stack w={"80%"}>
         <Text {...categoryStyles.headingStyle}>DISCOUNT RANGE</Text>
         <Checkbox size="md" borderColor={"#C8C7CD"} colorScheme="red">
-          <Text {...font}>10% and above</Text>
+          <Text {...fontStyle}>10% and above</Text>
         </Checkbox>
       </Stack>
     </Stack>

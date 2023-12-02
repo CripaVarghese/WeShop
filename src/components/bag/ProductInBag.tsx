@@ -9,6 +9,7 @@ import {
   chakra,
 } from "@chakra-ui/react";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { fontStyle } from "../../style";
 
 const ProductInBag = () => {
   return (
@@ -23,9 +24,7 @@ const ProductInBag = () => {
           src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12377258/2020/9/11/ce1b7bcb-a65a-4eb0-a317-42ac02718f1e1599798741705UrbanoFashionPrintedMenRoundNeckDarkGreenT-Shirt1.jpg"
         />
         <VStack align="stretch" spacing={1}>
-          <Text fontWeight="bold" fontSize="xs">
-            Urbano Fashion
-          </Text>
+          <Text {...fontStyle.xsBold}>Urbano Fashion</Text>
           <Text fontSize="xs">
             Men Teal Green Slim Fit Tropical Printed Pure Cotton T-shirt
           </Text>
@@ -36,21 +35,11 @@ const ProductInBag = () => {
             justify="space-between"
             w={{ base: "65%", md: "100%", lg: "100%" }}
           >
-            <Button
-              fontWeight="bold"
-              fontSize="xs"
-              size="xs"
-              borderRadius={"sm"}
-            >
+            <Button {...fontStyle.xsBold} size="xs" borderRadius={"sm"}>
               Size: XL
               <IoMdArrowDropdown />
             </Button>
-            <Button
-              fontWeight="bold"
-              fontSize="xs"
-              size="xs"
-              borderRadius={"sm"}
-            >
+            <Button {...fontStyle.xsBold} size="xs" borderRadius={"sm"}>
               Qty: 1
               <IoMdArrowDropdown />
             </Button>
@@ -60,9 +49,7 @@ const ProductInBag = () => {
             justify="space-between"
             w={{ base: "55%", sm: "25%", md: "70%", lg: "55%", "2xl": "45%" }}
           >
-            <Text fontWeight="bold" fontSize="xs">
-              ₹ 850
-            </Text>
+            <Text {...fontStyle.xsBold}>₹ 850</Text>
             <Text as="s" fontSize="xs" color="gray.500">
               ₹ 3,699
             </Text>

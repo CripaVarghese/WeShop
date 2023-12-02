@@ -1,5 +1,6 @@
 import { Button, Grid, GridItem, Stack, Text, chakra } from "@chakra-ui/react";
 import Product from "../Product";
+import { fontStyle } from "../../style";
 
 const Wishlist_prodAdded = () => {
   return (
@@ -25,8 +26,7 @@ const Wishlist_prodAdded = () => {
               borderRadius={"none"}
               w="100%"
               mt="25px"
-              fontSize={"xs"}
-              fontWeight={"bold"}
+              {...fontStyle.xsBold}
             >
               MOVE TO BAG
             </Button>

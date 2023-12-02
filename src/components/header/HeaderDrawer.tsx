@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import WyntraUser_icon from "../../constants/svg/WyntraUser_icon";
 import RightArrow_icon from "../../constants/svg/RightArrow_icon";
+import { fontStyle } from "../../style";
 
 const HeaderDrawer = (props: { isOpen: boolean; onClose: () => void }) => {
   const { isOpen, onClose } = props;
@@ -38,9 +39,7 @@ const HeaderDrawer = (props: { isOpen: boolean; onClose: () => void }) => {
               w="100%"
               pt="12px"
             >
-              <Text fontSize={"sm"} fontWeight={"bold"}>
-                Wyntra User
-              </Text>
+              <Text {...fontStyle.smBold}>Wyntra User</Text>
               <RightArrow_icon />
             </HStack>
           </Stack>

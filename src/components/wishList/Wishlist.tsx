@@ -1,15 +1,15 @@
 import { CiHeart } from "react-icons/ci";
 import { Button, Stack, Text } from "@chakra-ui/react";
+import { fontStyle } from "../../style";
 
 const Wishlist = () => {
   return (
     <Stack
-      w={"14.35%"}
-      p={2}
+      // w={"14.35%"}
+      // p={2}
       spacing={1}
       backgroundColor={"white"}
       position={"absolute"}
-      top="505px"
     >
       <Button
         w={"100%"}
@@ -25,9 +25,7 @@ const Wishlist = () => {
       <Text fontSize={"13px"} color={"#535766"} pt={"10px"}>
         Sizes:L
       </Text>
-      <Text fontSize={"xs"} fontWeight={"bold"}>
-        Rs 450
-      </Text>
+      <Text {...fontStyle.xsBold}>Rs 450</Text>
     </Stack>
   );
 };

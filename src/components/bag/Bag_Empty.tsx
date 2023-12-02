@@ -1,5 +1,6 @@
 import { Button, Stack, Image, Text } from "@chakra-ui/react";
 import bag_empty from "./bag_empty.png";
+import { fontStyle } from "../../style";
 
 const Bag_Empty = () => {
   return (
@@ -17,8 +18,7 @@ const Bag_Empty = () => {
         <Button
           color={"#ff3f6c"}
           variant="outline"
-          fontSize={"xs"}
-          fontWeight={"bold"}
+          {...fontStyle.xsBold}
           border="1px solid "
           p={"23px 10px"}
           borderRadius={"none"}
