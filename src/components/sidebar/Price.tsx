@@ -1,5 +1,5 @@
 import { Checkbox, Stack, Text } from "@chakra-ui/react";
-import { categoryStyles, fontStyle } from "../../style";
+import { categoryStyles, fontStyle } from "../../constants/style";
 
 const Price = () => {
   return (

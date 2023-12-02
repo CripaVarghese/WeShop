@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import WyntraUser_icon from "../../constants/svg/WyntraUser_icon";
 import RightArrow_icon from "../../constants/svg/RightArrow_icon";
-import { fontStyle } from "../../style";
+import { fontStyle } from "../../constants/style";
 
 const HeaderDrawer = (props: { isOpen: boolean; onClose: () => void }) => {
   const { isOpen, onClose } = props;

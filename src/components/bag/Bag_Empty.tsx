@@ -1,6 +1,6 @@
 import { Button, Stack, Image, Text } from "@chakra-ui/react";
 import bag_empty from "./bag_empty.png";
-import { fontStyle } from "../../style";
+import { fontStyle } from "../../constants/style";
 
 const Bag_Empty = () => {
   return (

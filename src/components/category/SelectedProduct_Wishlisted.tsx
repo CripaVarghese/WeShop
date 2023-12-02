@@ -1,5 +1,5 @@
 import { Text } from "@chakra-ui/react";
-import { fontStyle } from "../../style";
+import { fontStyle } from "../../constants/style";
 
 const SelectedProduct_Wishlisted = () => {
   return (

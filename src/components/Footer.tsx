@@ -12,7 +12,7 @@ import usefulLinks_Data from "../footerData/usefulLinks_Data";
 import policy from "../footerData/policy_Data";
 import { FaFacebookSquare, FaTwitter, FaYoutube } from "react-icons/fa";
 import { ImInstagram } from "react-icons/im";
-import { fontStyle, footerStyles } from "../style";
+import { fontStyle, footerStyles } from "../constants/style";
 
 const Footer = () => {
   return (

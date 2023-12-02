@@ -1,4 +1,4 @@
-import { fontStyle } from "../../style";
+import { fontStyle } from "../../constants/style";
 import { Input, Stack, Text } from "@chakra-ui/react";
 
 const DeliveryOptions = () => {

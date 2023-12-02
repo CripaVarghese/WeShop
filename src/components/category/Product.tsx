@@ -2,7 +2,7 @@ import { Stack, Image, Text, Button } from "@chakra-ui/react";
 import { useState } from "react";
 import { CiHeart } from "react-icons/ci";
 import { useNavigate } from "react-router-dom";
-import { fontStyle } from "../../style";
+import { fontStyle } from "../../constants/style";
 import SelectedProduct_Wishlisted from "./SelectedProduct_Wishlisted";
 
 const Product = () => {

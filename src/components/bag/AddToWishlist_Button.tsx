@@ -1,6 +1,6 @@
 import { HStack, Text } from "@chakra-ui/react";
 import AddToWishlist_Icon from "../../constants/svg/AddToWishlist_icon";
-import { fontStyle } from "../../style";
+import { fontStyle } from "../../constants/style";
 
 const AddToWishlist_Button = () => {
   return (

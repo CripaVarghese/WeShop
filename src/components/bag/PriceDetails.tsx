@@ -8,7 +8,7 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import ApplyCouponTag_icon from "../../constants/svg/ApplyCouponTag_icon";
-import { fontStyle } from "../../style";
+import { fontStyle } from "../../constants/style";
 
 const PriceDetails = () => {
   return (

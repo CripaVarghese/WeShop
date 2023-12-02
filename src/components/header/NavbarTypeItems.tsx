@@ -2,7 +2,7 @@ import { useState } from "react";
 import { HStack, Stack, Text, Box, Link } from "@chakra-ui/react";
 import { navbarOptionsData } from "../../constants/navbarOptionsData";
 import DropdownNavItems from "./DropdownNavItems";
-import { fontStyle } from "../../style";
+import { fontStyle } from "../../constants/style";
 
 const NavbarTypeItems = () => {
   const [selectedMenuId, setSelectedMenuId] = useState<string | null>(null);

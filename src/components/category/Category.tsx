@@ -5,7 +5,7 @@ import DisplayCategory from "./DisplayCategory";
 import Recommendation from "./Recommendation";
 import { useState } from "react";
 import Bundles from "./Bundles";
-import { fontStyle } from "../../style";
+import { fontStyle } from "../../constants/style";
 
 const Category = () => {
   const [isHovering, setIsHovering] = useState(false);

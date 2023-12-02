@@ -9,7 +9,7 @@ import {
   chakra,
 } from "@chakra-ui/react";
 import { IoMdArrowDropdown } from "react-icons/io";
-import { fontStyle } from "../../style";
+import { fontStyle } from "../../constants/style";
 
 const ProductInBag = () => {
   return (

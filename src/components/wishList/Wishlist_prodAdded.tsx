@@ -1,6 +1,6 @@
 import { Button, Grid, GridItem, Stack, Text, chakra } from "@chakra-ui/react";
 import Product from "../category/Product";
-import { fontStyle } from "../../style";
+import { fontStyle } from "../../constants/style";
 
 const Wishlist_prodAdded = () => {
   return (

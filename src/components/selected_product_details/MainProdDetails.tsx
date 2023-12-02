@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { HiOutlineShoppingBag } from "react-icons/Hi";
 import { CiHeart } from "react-icons/ci";
-import { fontStyle } from "../../style";
+import { fontStyle } from "../../constants/style";
 
 const MainProdDetails = () => {
   return (

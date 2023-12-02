@@ -1,6 +1,6 @@
 import { CiHeart } from "react-icons/ci";
 import { Button, Stack, Text } from "@chakra-ui/react";
-import { fontStyle } from "../../style";
+import { fontStyle } from "../../constants/style";
 
 const Wishlist = () => {
   return (
