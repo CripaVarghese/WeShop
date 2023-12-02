@@ -1,16 +1,15 @@
-import ShoppingCartProvider from "./context/ShoppingCartContext";
 import Footer from "./components/Footer";
 import Header from "./components/header/Header";
 import Hero from "./components/Hero";
-import { Stack } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (
-    <ShoppingCartProvider>
+    <ChakraProvider>
       <Header />
       <Hero />
       <Footer />
-    </ShoppingCartProvider>
+    </ChakraProvider>
   );
 }
 
