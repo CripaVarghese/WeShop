@@ -84,8 +84,8 @@ const Header = () => {
                 aria-label=""
                 title="wishlist"
                 _hover={{ variant: "ghost" }}
-                // onClick={() => navigate("/Wishlist_Page")}
-                onClick={() => navigate("/Wishlist_prodAdded")}
+                // onClick={() => navigate("/wishlist-page")}
+                onClick={() => navigate("/wishlist-prodAdded")}
               />
               {/* <Text fontSize={'xs'}>Profile</Text> */}
             </Stack>
@@ -95,8 +95,8 @@ const Header = () => {
                 aria-label=""
                 title="bag"
                 _hover={{ variant: "ghost" }}
-                onClick={() => navigate("/Bag_Page")}
-                // onClick={() => navigate("/Bag_Empty")}
+                onClick={() => navigate("/bag-page")}
+                // onClick={() => navigate("/bag-empty")}
               />
               {/* <Text fontSize={'xs'}>Profile</Text> */}
             </Stack>

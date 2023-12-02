@@ -25,7 +25,7 @@ const Product = () => {
       position={"relative"}
     >
       <Image
-        onClick={() => navigate("/SelectedProductDetails")}
+        onClick={() => navigate("/selected-product-details")}
         src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12377258/2020/9/11/ce1b7bcb-a65a-4eb0-a317-42ac02718f1e1599798741705UrbanoFashionPrintedMenRoundNeckDarkGreenT-Shirt1.jpg"
       />
       <Stack px={"10px"} mt={"12px"} spacing={".5px"}>
