@@ -1,5 +1,5 @@
 import { Grid, GridItem, Image } from "@chakra-ui/react";
-import { selectedProductData } from "../../constants/selectedProductData";
+import { selectedProductData } from "../../constants/productData";
 
 const SelectedProduct = () => {
   return (
