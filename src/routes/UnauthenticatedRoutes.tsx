@@ -18,7 +18,6 @@ export const UnauthenticatedRoutes = () => {
         <Route path="men" element={<Category />} />
         <Route path="bag-page" element={<Bag_Page />} />
         <Route path="bag-empty" element={<Bag_Empty />} />
-        Bag_Empty
         <Route path="wishlist-page" element={<Wishlist_Page />} />
         <Route path="wishlist-prodAdded" element={<Wishlist_prodAdded />} />
         <Route
