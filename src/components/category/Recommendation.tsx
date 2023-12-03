@@ -1,5 +1,6 @@
 import { Stack, Text } from "@chakra-ui/react";
 import { recommendationMenu } from "../../constants/recommendation";
+import { Link } from "react-router-dom";
 
 const Recommendation = ({ onMouseOut }: any) => {
   return (
@@ -21,12 +22,12 @@ const Recommendation = ({ onMouseOut }: any) => {
         onClick={onMouseOut}
       >
         {recommendationMenu.menuItems.map((item, itemIndex) => (
-          <a href={item.url} key={itemIndex}>
+          <Link to={item?.url} key={itemIndex}>
             <Text fontSize={"13px"} fontWeight={"normal"}>
               {/* _hover={{ bg: "grey", cursor: "pointer" }} */}
               {item.label}
             </Text>
-          </a>
+          </Link>
         ))}
       </Stack>
     </>

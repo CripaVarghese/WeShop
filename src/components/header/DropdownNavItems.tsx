@@ -51,9 +51,9 @@ const DropdownNavItems = (props: any) => {
                             py={"2px"}
                             color={color}
                           >
-                            <a href={navGroup.header.url}>
+                            <Link as={RouterLink} to={navGroup.header.url}>
                               {navGroup.header.label}
-                            </a>
+                            </Link>
                           </Box>
                           <Stack spacing={0}>
                             {navGroup.menuItems?.map((navGroupItem: any) => (
