@@ -4,7 +4,7 @@ import { selectedProductData } from "../../constants/selectedProductData";
 const SelectedProduct = () => {
   return (
     <Grid templateColumns="repeat(2, 1fr)" gap={3}>
-      {selectedProductData.data.map((item) => (
+      {selectedProductData.data.map((item: any) => (
         <GridItem>
           <Image src={item.url} />
         </GridItem>
