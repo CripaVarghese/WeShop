@@ -1,4 +1,4 @@
-[
+export default [
   {
     label: "ADIDAS Men Indian Cricket ODI Fan Polo Collar Jersey",
     url: "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/25099214/2023/9/26/2749b9d6-1191-45bf-b280-2d430c3053f91695731103781-ADIDAS-Men-Indian-Cricket-ODI-Fan-Jersey-Printed-Polo-Collar-1.jpg",

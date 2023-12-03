@@ -5,7 +5,7 @@ import BundleMenu from "./BundleMenu";
 import { bundleData } from "../../constants/bundleData";
 
 const Bundles = () => {
-  const [selectedMenuId, setSelectedMenuId] = React.useState(null);
+  const [selectedMenuId, setSelectedMenuId] = React.useState<string | null>();
 
   const handleClick = (id: string | null) => {
     if (selectedMenuId === id) {
