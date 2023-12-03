@@ -1,7 +1,8 @@
 import { Stack, Box, Grid, Link } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 
 const NavItem = (props: {
-  data: { url?: string; label: any };
+  data: { url?: string; label: string };
   color?: string;
 }) => (
   <Box
@@ -11,8 +12,9 @@ const NavItem = (props: {
     marginTop={0}
     color={props.color}
   >
-    <a href={"/men" ?? "#"}>{props.data.label}</a>
-    {/* href={props.data.url} */}
+    <Link as={RouterLink} to="/men">
+      {props.data.label}
+    </Link>
   </Box>
 );
 
