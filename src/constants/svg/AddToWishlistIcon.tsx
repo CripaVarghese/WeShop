@@ -1,4 +1,4 @@
-const AddToWishlist_Icon = () => {
+const AddToWishlistIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -15,4 +15,4 @@ const AddToWishlist_Icon = () => {
   );
 };
 
-export default AddToWishlist_Icon;
+export default AddToWishlistIcon;

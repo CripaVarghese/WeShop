@@ -7,7 +7,7 @@ import {
   Divider,
   Stack,
 } from "@chakra-ui/react";
-import ApplyCouponTag_icon from "../../constants/svg/ApplyCouponTag_icon";
+import ApplyCouponTag_icon from "../../constants/svg/ApplyCouponTagIcon";
 import { fontStyle } from "../../constants/style";
 
 const PriceDetails = () => {

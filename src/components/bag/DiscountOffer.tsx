@@ -1,5 +1,5 @@
 import { Box, Text, Button, VStack, HStack } from "@chakra-ui/react";
-import AvailableOffers_icon from "../../constants/svg/AvailableOffers_icon";
+import AvailableOffers_icon from "../../constants/svg/AvailableOffersIcon";
 
 const DiscountOffer = () => {
   return (

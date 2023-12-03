@@ -1,7 +1,7 @@
 import { Button, Stack, Image, Text } from "@chakra-ui/react";
 import wishlist_Empty from "./wishlist_Empty.png";
 
-const Wishlist_Page = () => {
+const WishlistPage = () => {
   return (
     <Stack h={"100vh"} justifyContent={"center"} alignItems={"center"}>
       <Stack
@@ -32,4 +32,4 @@ const Wishlist_Page = () => {
   );
 };
 
-export default Wishlist_Page;
+export default WishlistPage;

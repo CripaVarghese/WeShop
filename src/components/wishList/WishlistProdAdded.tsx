@@ -2,7 +2,7 @@ import { Button, Grid, GridItem, Stack, Text, chakra } from "@chakra-ui/react";
 import Product from "../category/Product";
 import { fontStyle } from "../../constants/style";
 
-const Wishlist_prodAdded = () => {
+const WishlistProdAdded = () => {
   return (
     <Stack w={"100%"} h={"100vh"} alignItems={"center"}>
       <Stack w={"90%"} h={"400px"} gap={10} mt="130px">
@@ -37,4 +37,4 @@ const Wishlist_prodAdded = () => {
   );
 };
 
-export default Wishlist_prodAdded;
+export default WishlistProdAdded;

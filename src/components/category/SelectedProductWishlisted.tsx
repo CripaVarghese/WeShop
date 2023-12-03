@@ -1,7 +1,7 @@
 import { Text } from "@chakra-ui/react";
 import { fontStyle } from "../../constants/style";
 
-const SelectedProduct_Wishlisted = () => {
+const SelectedProductWishlisted = () => {
   return (
     <>
       <Text {...fontStyle.smBold}>Urbano Fashion</Text>
@@ -15,4 +15,4 @@ const SelectedProduct_Wishlisted = () => {
   );
 };
 
-export default SelectedProduct_Wishlisted;
+export default SelectedProductWishlisted;

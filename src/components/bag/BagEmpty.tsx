@@ -2,7 +2,7 @@ import { Button, Stack, Image, Text } from "@chakra-ui/react";
 import bag_empty from "./bag_empty.png";
 import { fontStyle } from "../../constants/style";
 
-const Bag_Empty = () => {
+const BagEmpty = () => {
   return (
     <Stack h={"85vh"} justifyContent={"center"} alignItems={"center"}>
       <Stack w={"25%"} alignItems={"center"} justifyContent={"space-between"}>
@@ -31,4 +31,4 @@ const Bag_Empty = () => {
   );
 };
 
-export default Bag_Empty;
+export default BagEmpty;

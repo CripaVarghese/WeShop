@@ -16,7 +16,7 @@ import Profile from "./profile/Profile";
 import Hamburger from "../../constants/svg/Hamburger";
 import HeaderDrawer from "./HeaderDrawer";
 import HeaderTypeFilter from "./HeaderTypeFilter";
-import Search_icon from "../../constants/svg/Search_icon";
+import Search_icon from "../../constants/svg/SearchIcon";
 import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {

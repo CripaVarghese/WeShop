@@ -1,11 +1,11 @@
 import { Stack, Center, Divider } from "@chakra-ui/react";
-import AddToWishlist_Button from "./AddToWishlist_Button";
+import AddToWishlistButton from "./AddToWishlistButton";
 import DiscountOffer from "./DiscountOffer";
 import PriceDetails from "./PriceDetails";
 import ProductInBag from "./ProductInBag";
 import TotalNumber from "./TotalNumber";
 
-const Bag_Page = () => {
+const BagPage = () => {
   return (
     <Stack
       flexDirection={{ base: "column", md: "row" }}
@@ -20,7 +20,7 @@ const Bag_Page = () => {
         <DiscountOffer />
         <TotalNumber />
         <ProductInBag />
-        <AddToWishlist_Button />
+        <AddToWishlistButton />
       </Stack>
       <Center
         height="50vh"
@@ -36,4 +36,4 @@ const Bag_Page = () => {
   );
 };
 
-export default Bag_Page;
+export default BagPage;

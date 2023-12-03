@@ -3,7 +3,7 @@ import { useState } from "react";
 import { CiHeart } from "react-icons/ci";
 import { useNavigate } from "react-router-dom";
 import { fontStyle } from "../../constants/style";
-import SelectedProduct_Wishlisted from "./SelectedProduct_Wishlisted";
+import SelectedProductWishlisted from "./SelectedProductWishlisted";
 
 const Product = () => {
   const navigate = useNavigate();
@@ -82,7 +82,7 @@ const Product = () => {
               </Text>
             </Stack>
           ) : (
-            <SelectedProduct_Wishlisted />
+            <SelectedProductWishlisted />
           )}
         </Stack>
       </Stack>
