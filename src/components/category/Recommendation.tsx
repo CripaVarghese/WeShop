@@ -11,7 +11,6 @@ const Recommendation = ({ onMouseOut }: any) => {
         top="222px"
         right="29px"
         w={"16.2%"}
-        h={"22%"}
         p={"15px"}
         zIndex={"1"}
         gap={2}
