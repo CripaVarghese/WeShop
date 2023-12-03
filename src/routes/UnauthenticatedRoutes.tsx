@@ -15,13 +15,13 @@ export const UnauthenticatedRoutes = () => {
       <Header />
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="men" element={<Category />} />
-        <Route path="bag-page" element={<Bag_Page />} />
-        <Route path="bag-empty" element={<Bag_Empty />} />
-        <Route path="wishlist-page" element={<Wishlist_Page />} />
-        <Route path="wishlist-prodAdded" element={<Wishlist_prodAdded />} />
+        <Route path="/men" element={<Category />} />
+        <Route path="/bag-page" element={<Bag_Page />} />
+        <Route path="/bag-empty" element={<Bag_Empty />} />
+        <Route path="/wishlist-page" element={<Wishlist_Page />} />
+        <Route path="/wishlist-prodAdded" element={<Wishlist_prodAdded />} />
         <Route
-          path="selected-product-details"
+          path="/selected-product-details"
           element={<SelectedProductDetails />}
         />
         <Route path="*" element={<ErrorPage />} />
