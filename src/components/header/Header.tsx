@@ -9,7 +9,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import { HiOutlineShoppingBag } from "react-icons/Hi";
+import { HiOutlineShoppingBag } from "react-icons/hi";
 import { CiHeart } from "react-icons/ci";
 import logo from "../../constants/Images/logo.png";
 import Profile from "./profile/Profile";

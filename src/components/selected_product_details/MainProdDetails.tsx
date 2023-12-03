@@ -7,7 +7,7 @@ import {
   IconButton,
   Text,
 } from "@chakra-ui/react";
-import { HiOutlineShoppingBag } from "react-icons/Hi";
+import { HiOutlineShoppingBag } from "react-icons/hi";
 import { CiHeart } from "react-icons/ci";
 import { fontStyle } from "../../constants/style";
 
