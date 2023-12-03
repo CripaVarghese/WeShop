@@ -23,7 +23,7 @@ const DropdownNavItems = (props: any) => {
   return (
     <Box
       position="absolute"
-      top="73px"
+      top="72px"
       right="100px"
       width="83%"
       height="440px"
