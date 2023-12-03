@@ -3,7 +3,7 @@ import { HStack, Stack, Text, Box, Link } from "@chakra-ui/react";
 import { navbarOptionsData } from "../../constants/navbarOptionsData";
 import DropdownNavItems from "./DropdownNavItems";
 import { fontStyle } from "../../constants/style";
-
+import { Link as RouterLink } from "react-router-dom";
 const NavbarTypeItems = () => {
   const [selectedMenuId, setSelectedMenuId] = useState<string | null>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -42,8 +42,9 @@ const NavbarTypeItems = () => {
             py="30px"
           >
             <Link
+              as={RouterLink}
               _hover={{ textDecoration: "none" }}
-              href={navContent.header.url}
+              to={navContent.header.url}
             >
               <Text {...fontStyle.xsBold}>{navContent.header.label}</Text>
             </Link>
