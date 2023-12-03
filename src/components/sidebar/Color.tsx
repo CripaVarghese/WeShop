@@ -12,7 +12,7 @@ const Color = () => {
       <Stack w={"80%"}>
         <Text {...categoryStyles.headingStyle}>COLOR</Text>
         <Checkbox size="md" borderColor={"#C8C7CD"} colorScheme="red">
-          <Text {...fontStyle}>blue</Text>
+          <Text {...fontStyle}>Blue</Text>
         </Checkbox>
       </Stack>
     </Stack>
