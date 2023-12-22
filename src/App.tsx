@@ -9,6 +9,7 @@ import WishlistProdAdded from "./components/wishList/WishlistProdAdded";
 import BagEmpty from "./components/bag/BagEmpty";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
+import ProductInCart from "./components/category/ProductInCart";
 
 export const App = () => {
   return (
@@ -17,10 +18,10 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/men" element={<Category />} />
-        <Route path="/bag-page" element={<BagPage />} />
+        <Route path="/bag-page/:id" element={<BagPage />} />
         <Route path="/bag-empty" element={<BagEmpty />} />
         <Route path="/wishlist-page" element={<WishlistPage />} />
-        <Route path="/wishlist-prodAdded" element={<WishlistProdAdded />} />
+        <Route path="/wishlist-prodAdded/:id" element={<WishlistProdAdded />} />
         <Route
           path="/selected-product-details"
           element={<SelectedProductDetails />}
