@@ -10,8 +10,16 @@ import {
 } from "@chakra-ui/react";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { fontStyle } from "../../constants/style";
+import { imageItems } from "../../constants/imageItems";
 
-const ProductInBag = () => {
+type CartItemProps = {
+  id: number;
+};
+
+const ProductInBag = ({ id }: CartItemProps) => {
+  const item = imageItems.dataItems.find((i) => i.id === id);
+  if (item == null) return null;
+
   return (
     <Box borderWidth="1px" borderRadius="lg" p={4}>
       <HStack
@@ -19,10 +27,7 @@ const ProductInBag = () => {
         flexDirection={{ base: "column", md: "row" }}
         gap={{ base: "20px", md: "10px" }}
       >
-        <Image
-          w={{ base: "100%", md: "100px" }}
-          src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12377258/2020/9/11/ce1b7bcb-a65a-4eb0-a317-42ac02718f1e1599798741705UrbanoFashionPrintedMenRoundNeckDarkGreenT-Shirt1.jpg"
-        />
+        <Image w={{ base: "100%", md: "100px" }} key={item.id} src={item.url} />
         <VStack align="stretch" spacing={1}>
           <Text {...fontStyle.xsBold}>Urbano Fashion</Text>
           <Text fontSize="xs">

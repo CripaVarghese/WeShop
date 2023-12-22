@@ -4,8 +4,12 @@ import DiscountOffer from "./DiscountOffer";
 import PriceDetails from "./PriceDetails";
 import ProductInBag from "./ProductInBag";
 import TotalNumber from "./TotalNumber";
+import { useShoppingCart } from "../../context/ShopCartContext";
+import { useParams } from "react-router-dom";
 
 const BagPage = () => {
+  const { bagItems, getItemBagQuantity } = useShoppingCart();
+
   return (
     <Stack
       flexDirection={{ base: "column", md: "row" }}
@@ -19,7 +23,11 @@ const BagPage = () => {
       <Stack w={{ base: "85%", sm: "90%", md: "50%", lg: "40%" }}>
         <DiscountOffer />
         <TotalNumber />
-        <ProductInBag />
+        {bagItems &&
+          bagItems.map((item: { id: any }) => (
+            <ProductInBag key={item.id} {...item} />
+          ))}
+
         <AddToWishlistButton />
       </Stack>
       <Center

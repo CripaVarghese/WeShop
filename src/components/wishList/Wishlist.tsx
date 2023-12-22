@@ -4,13 +4,7 @@ import { fontStyle } from "../../constants/style";
 
 const Wishlist = () => {
   return (
-    <Stack
-      // w={"14.35%"}
-      // p={2}
-      spacing={1}
-      backgroundColor={"white"}
-      position={"absolute"}
-    >
+    <Stack spacing={1} backgroundColor={"white"} position={"absolute"}>
       <Button
         w={"100%"}
         borderRadius={"2"}
