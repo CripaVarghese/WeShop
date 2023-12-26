@@ -2,7 +2,7 @@ import { Stack, Box, Grid, Link } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 
 const NavItem = (props: {
-  data: { url?: string; label?: string };
+  data: { url?: string | undefined; label?: string | undefined };
   color?: string;
 }) => (
   <Box
@@ -12,7 +12,7 @@ const NavItem = (props: {
     marginTop={0}
     color={props.color}
   >
-    <Link as={RouterLink} to="/men">
+    <Link as={RouterLink} to="/men" _hover={{ textDecoration: "none" }}>
       {props.data?.label}
     </Link>
   </Box>
@@ -26,10 +26,9 @@ const DropdownNavItems = (props: any) => {
       top="72px"
       right="100px"
       width="83%"
-      height="440px"
       zIndex={"1"}
       backgroundColor="white"
-      p={"15px 40px"}
+      p={"20px 40px"}
       boxShadow={
         "rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px"
       }
@@ -51,11 +50,15 @@ const DropdownNavItems = (props: any) => {
                             py={"2px"}
                             color={color}
                           >
-                            <Link as={RouterLink} to={navGroup.header.url}>
+                            <Link
+                              as={RouterLink}
+                              to={navGroup.header.url}
+                              _hover={{ textDecoration: "none" }}
+                            >
                               {navGroup.header.label}
                             </Link>
                           </Box>
-                          <Stack spacing={0}>
+                          <Stack spacing={0} key={navGroupIndex}>
                             {navGroup.menuItems?.map((navGroupItem: any) => (
                               <Link _hover={{ textDecoration: "none" }}>
                                 <NavItem data={navGroupItem} />
