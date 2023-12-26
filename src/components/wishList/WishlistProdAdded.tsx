@@ -1,8 +1,17 @@
-import { Button, Grid, GridItem, Stack, Text, chakra } from "@chakra-ui/react";
+import {
+  Button,
+  Grid,
+  GridItem,
+  Stack,
+  Text,
+  chakra,
+  useDisclosure,
+} from "@chakra-ui/react";
 import { fontStyle } from "../../constants/style";
 import { useShoppingCart } from "../../context/ShopCartContext";
 import ProductInCart from "../category/ProductInCart";
 import { useNavigate, useParams } from "react-router-dom";
+// import ModalCart from "../ModalCart";
 
 const WishlistProdAdded = () => {
   const { id } = useParams();
@@ -10,6 +19,7 @@ const WishlistProdAdded = () => {
   const { cartItems, getItemQuantity, increaseItemBagQuantity } =
     useShoppingCart();
   const quantity = getItemQuantity(Number(id));
+  // const { onOpen, isOpen, onClose } = useDisclosure();
 
   return (
     <Stack w={"100%"} h={"100vh"} alignItems={"center"}>
@@ -37,6 +47,7 @@ const WishlistProdAdded = () => {
                   w="100%"
                   mt="25px"
                   {...fontStyle.xsBold}
+                  // onClick={onOpen}
                   onClick={() => {
                     increaseItemBagQuantity(item.id);
                     navigate(`/bag-page/${item.id}`);
@@ -44,6 +55,7 @@ const WishlistProdAdded = () => {
                 >
                   MOVE TO BAG
                 </Button>
+                {/* <ModalCart isOpen={isOpen} onClose={onClose} /> */}
               </GridItem>
             ))}
         </Grid>
