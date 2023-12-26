@@ -1,8 +1,11 @@
 import { Grid, GridItem, Stack, Text, chakra } from "@chakra-ui/react";
-import SelectedProduct from "./SelectedProduct";
+import ImageDetails from "./ImageDetails";
 import ProductDetails from "../category/ProductDetails";
+import { useLocation } from "react-router-dom";
 
 const SelectedProductDetails = () => {
+  const location = useLocation();
+  const { data } = location.state;
   return (
     <Stack width={"100%"} alignItems={"center"} pt={"90px"}>
       <Stack w="96%">
@@ -14,7 +17,7 @@ const SelectedProductDetails = () => {
         </Text>
         <Grid templateColumns="repeat(5, 1fr)" gap={6}>
           <GridItem colSpan={3}>
-            <SelectedProduct />
+            <ImageDetails data={data} />
           </GridItem>
           <GridItem colStart={4} colEnd={6}>
             <ProductDetails />
