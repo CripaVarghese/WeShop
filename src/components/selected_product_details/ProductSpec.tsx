@@ -5,7 +5,7 @@ const ProductSpec = () => {
   return (
     <Stack py="20px">
       {productSpecArray.data.map((item) => (
-        <>
+        <Stack key={item.id}>
           <Text fontSize={"md"} fontWeight={"bold"}>
             {item.mainHeader}
           </Text>
@@ -16,7 +16,7 @@ const ProductSpec = () => {
               <Text fontSize={"sm"}>{subHeader?.des}</Text>
             </>
           ))}
-        </>
+        </Stack>
       ))}
     </Stack>
   );
@@ -26,6 +26,7 @@ export default ProductSpec;
 
 interface productSpecArrayType {
   data: {
+    id: number;
     mainHeader: string;
     des: string;
     subHeader: {
@@ -39,6 +40,7 @@ interface productSpecArrayType {
 const productSpecArray: productSpecArrayType = {
   data: [
     {
+      id: 1,
       mainHeader: "PRODUCT DETAILS",
       des: "Teal green Tropical printed T-shirt, has a round neck, and long sleeves",
       subHeader: [
