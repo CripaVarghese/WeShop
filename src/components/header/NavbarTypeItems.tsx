@@ -31,6 +31,7 @@ const NavbarTypeItems = () => {
           key={navContent.header.id}
           justifyContent={"flex-end"}
           onMouseOver={() => handleMouseOver(navContent.header.id)}
+          onMouseOut={() => handleMouseOut()}
           display={{ base: "none", md: "block" }}
         >
           <Box
