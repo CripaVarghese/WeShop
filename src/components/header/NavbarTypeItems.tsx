@@ -19,7 +19,7 @@ const NavbarTypeItems = () => {
 
   return (
     <HStack
-      w={{ md: "350px", lg: "350px", "2xl": "400px" }}
+      // w={{ md: "350px", lg: "35%", "2xl": "400px" }}
       justifyContent={{
         base: "none",
         md: "space-between",
@@ -36,11 +36,12 @@ const NavbarTypeItems = () => {
         >
           <Box
             _hover={{
-              borderBottom: `2px solid ${navContent.header.color}`,
+              borderBottom: `5px solid ${navContent.header.color}`,
             }}
             position="relative"
             borderBottom="2px solid white"
             py="30px"
+            px="15px"
           >
             <Link
               as={RouterLink}
