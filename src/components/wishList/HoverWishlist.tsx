@@ -41,7 +41,7 @@ const HoverWishlist = ({ id }: any) => {
           setButtonText(buttonText === "WISHLIST" ? "WISHLISTED" : "WISHLIST");
           setActive(!active);
           increaseCartQuantity(id);
-          navigate(`/wishlist-prodAdded/${id}`);
+          navigate("/wishlist-prodAdded");
         }}
         style={{
           backgroundColor: active ? "rgb(83, 87, 102)" : "white",

@@ -5,7 +5,7 @@ import {
   Stack,
   Text,
   chakra,
-  useDisclosure,
+  // useDisclosure,
 } from "@chakra-ui/react";
 import { fontStyle } from "../../constants/style";
 import { useShoppingCart } from "../../context/ShopCartContext";
@@ -50,7 +50,7 @@ const WishlistProdAdded = () => {
                   // onClick={onOpen}
                   onClick={() => {
                     increaseItemBagQuantity(item.id);
-                    navigate(`/bag-page/${item.id}`);
+                    navigate("/bag-page");
                   }}
                 >
                   MOVE TO BAG
