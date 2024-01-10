@@ -13,11 +13,10 @@ import ProductInCart from "../category/ProductInCart";
 import { useNavigate, useParams } from "react-router-dom";
 // import ModalCart from "../ModalCart";
 
-const WishlistProdAdded = () => {
+const WishlistProdAdded = ({ cartItems }: any) => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { cartItems, getItemQuantity, increaseItemBagQuantity } =
-    useShoppingCart();
+  const { getItemQuantity, increaseItemBagQuantity } = useShoppingCart();
   const quantity = getItemQuantity(Number(id));
   // const { onOpen, isOpen, onClose } = useDisclosure();
 
