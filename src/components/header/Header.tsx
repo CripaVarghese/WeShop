@@ -18,7 +18,6 @@ import HeaderDrawer from "./HeaderDrawer";
 import HeaderTypeFilter from "./HeaderTypeFilter";
 import Search_icon from "../../constants/svg/SearchIcon";
 import { Link, useNavigate } from "react-router-dom";
-import { MdAdd } from "react-icons/md";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -87,8 +86,7 @@ const Header = () => {
                 aria-label=""
                 title="wishlist"
                 _hover={{ variant: "ghost" }}
-                // onClick={() => navigate("/wishlist-page")}
-                onClick={() => navigate("/wishlist-prodAdded")}
+                onClick={() => navigate("/wishlist-page")}
               />
               {/* <Text fontSize={'xs'}>Profile</Text> */}
             </Stack>
@@ -99,7 +97,6 @@ const Header = () => {
                 title="bag"
                 _hover={{ variant: "ghost" }}
                 onClick={() => navigate("/bag-page")}
-                // onClick={() => navigate("/bag-empty")}
               />
               {/* <Text fontSize={'xs'}>Profile</Text> */}
             </Stack>
