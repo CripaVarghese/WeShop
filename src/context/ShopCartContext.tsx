@@ -9,10 +9,13 @@ type ShoppingCartContext = {
   increaseCartQuantity: (id: number) => void;
   removeFromCart: (id: number) => void;
   cartItems: CartItem[] | undefined;
+  cartProdCount: number;
+
   getItemBagQuantity: (id: number) => number;
   increaseItemBagQuantity: (id: number) => void;
   removeFromBag: (id: number) => void;
   bagItems: BagItem[] | undefined;
+  bagProdCount: number;
 };
 
 type CartItem = {
@@ -60,6 +63,11 @@ function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     });
   }
 
+  const cartProdCount = cartItems.reduce(
+    (quantity, item) => quantity + item.quantity,
+    0
+  );
+
   function getItemBagQuantity(id: number) {
     return bagItems.find((item) => item.id === id)?.quantity || 0;
   }
@@ -86,15 +94,23 @@ function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     });
   }
 
+  const bagProdCount = bagItems.reduce(
+    (quantity, item) => quantity + item.quantity,
+    0
+  );
+
   const contextValue = {
     getItemQuantity,
     increaseCartQuantity,
     removeFromCart,
     cartItems,
+    cartProdCount,
+
     getItemBagQuantity,
     increaseItemBagQuantity,
     removeFromBag,
     bagItems,
+    bagProdCount,
   };
   return (
     <ShoppingCartContext.Provider value={contextValue}>

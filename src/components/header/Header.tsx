@@ -7,6 +7,7 @@ import {
   Box,
   useDisclosure,
   Button,
+  Text,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { HiOutlineShoppingBag } from "react-icons/hi";
@@ -18,11 +19,13 @@ import HeaderDrawer from "./HeaderDrawer";
 import HeaderTypeFilter from "./HeaderTypeFilter";
 import Search_icon from "../../constants/svg/SearchIcon";
 import { Link, useNavigate } from "react-router-dom";
+import { useShoppingCart } from "../../context/ShopCartContext";
 
 const Header = () => {
   const navigate = useNavigate();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [isHovering, setIsHovering] = useState(false);
+  const { bagProdCount } = useShoppingCart();
 
   const handleMouseOver = () => {
     setIsHovering(true);
@@ -90,7 +93,7 @@ const Header = () => {
               />
               {/* <Text fontSize={'xs'}>Profile</Text> */}
             </Stack>
-            <Stack>
+            <Stack position="relative">
               <IconButton
                 icon={<HiOutlineShoppingBag fontSize="1.50rem" />}
                 aria-label=""
@@ -98,6 +101,9 @@ const Header = () => {
                 _hover={{ variant: "ghost" }}
                 onClick={() => navigate("/bag-page")}
               />
+              <Button position="absolute" left="3" bottom={"2"}>
+                {bagProdCount}
+              </Button>
               {/* <Text fontSize={'xs'}>Profile</Text> */}
             </Stack>
           </ButtonGroup>

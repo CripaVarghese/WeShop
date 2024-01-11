@@ -16,8 +16,7 @@ import { useNavigate, useParams } from "react-router-dom";
 const WishlistProdAdded = ({ cartItems }: any) => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { getItemQuantity, increaseItemBagQuantity } = useShoppingCart();
-  const quantity = getItemQuantity(Number(id));
+  const { increaseItemBagQuantity, cartProdCount } = useShoppingCart();
   // const { onOpen, isOpen, onClose } = useDisclosure();
 
   return (
@@ -26,7 +25,7 @@ const WishlistProdAdded = ({ cartItems }: any) => {
         <Text fontWeight={"700"} fontSize={"16px"}>
           My Wishlist{" "}
           <chakra.span color={"#282828"} fontWeight={"normal"} fontSize={"md"}>
-            {quantity} item
+            {cartProdCount} item
           </chakra.span>
         </Text>
         <Grid
