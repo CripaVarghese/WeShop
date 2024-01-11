@@ -11,23 +11,40 @@ import {
 import { IoMdArrowDropdown } from "react-icons/io";
 import { fontStyle } from "../../constants/style";
 import { imageItems } from "../../constants/imageItems";
+import { useShoppingCart } from "../../context/ShopCartContext";
+import { IoCloseOutline } from "react-icons/io5";
 
 type CartItemProps = {
   id: number;
 };
 
 const ProductInBag = ({ id }: CartItemProps) => {
+  const { removeFromBag } = useShoppingCart();
+
   const item = imageItems.dataItems.find((i) => i.id === id);
   if (item == null) return null;
 
   return (
-    <Box borderWidth="1px" borderRadius="lg" p={4}>
+    <Box borderWidth="1px" borderRadius="lg" p={4} position={"relative"}>
       <HStack
         alignItems={"flex-start"}
         flexDirection={{ base: "column", md: "row" }}
         gap={{ base: "20px", md: "10px" }}
       >
+        <Button
+          boxSize={5}
+          p={0}
+          borderRadius={"full"}
+          pos={"absolute"}
+          left={"92%"}
+          bg="ghost"
+          _hover={{ bg: "ghost" }}
+          onClick={() => removeFromBag(id)}
+        >
+          <IoCloseOutline size={25} />
+        </Button>
         <Image w={{ base: "100%", md: "100px" }} key={item.id} src={item.url} />
+
         <VStack align="stretch" spacing={1}>
           <Text {...fontStyle.xsBold}>Urbano Fashion</Text>
           <Text fontSize="xs">

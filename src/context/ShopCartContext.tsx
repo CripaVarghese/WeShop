@@ -11,6 +11,7 @@ type ShoppingCartContext = {
   cartItems: CartItem[] | undefined;
   getItemBagQuantity: (id: number) => number;
   increaseItemBagQuantity: (id: number) => void;
+  removeFromBag: (id: number) => void;
   bagItems: BagItem[] | undefined;
 };
 
@@ -79,6 +80,12 @@ function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     });
   }
 
+  function removeFromBag(id: number) {
+    setBagItems((currItems) => {
+      return currItems.filter((item) => item.id !== id);
+    });
+  }
+
   const contextValue = {
     getItemQuantity,
     increaseCartQuantity,
@@ -86,6 +93,7 @@ function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     cartItems,
     getItemBagQuantity,
     increaseItemBagQuantity,
+    removeFromBag,
     bagItems,
   };
   return (
