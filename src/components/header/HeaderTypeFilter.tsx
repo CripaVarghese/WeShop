@@ -7,8 +7,18 @@ import {
 } from "@chakra-ui/react";
 import { FiSearch } from "react-icons/fi";
 import NavbarTypeItems from "./NavbarTypeItems";
+import { navbarOptionsData } from "../../constants/navbarOptionsData";
+import { useState } from "react";
 
 const HeaderTypeFilter = () => {
+  const [filteredData, setFilteredData] = useState();
+  const handleSearchChange = (e: any) => {
+    const searchWord = e.target.value;
+    const newFilter = navbarOptionsData.filter((value: any) => {
+      return value.navContents.header.label.includes(searchWord);
+      setFilteredData(newFilter);
+    });
+  };
   return (
     <Stack
       w="100%"
@@ -35,6 +45,7 @@ const HeaderTypeFilter = () => {
         <Input
           fontSize={"xs"}
           placeholder="Search for products, brands and more"
+          onChange={handleSearchChange}
         />
       </InputGroup>
     </Stack>
