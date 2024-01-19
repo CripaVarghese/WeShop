@@ -98,12 +98,23 @@ const Header = () => {
                 icon={<HiOutlineShoppingBag fontSize="1.50rem" />}
                 aria-label=""
                 title="bag"
-                _hover={{ variant: "ghost" }}
                 onClick={() => navigate("/bag-page")}
               />
-              <Button position="absolute" left="3" bottom={"2"}>
-                {bagProdCount}
-              </Button>
+              {bagProdCount === 0 ? null : (
+                <Text
+                  fontSize={"12"}
+                  fontWeight={"500"}
+                  p="1px 6px"
+                  position="absolute"
+                  left="25"
+                  bottom={"5"}
+                  color="white"
+                  bg={"#f16565"}
+                  borderRadius={"50%"}
+                >
+                  {bagProdCount}
+                </Text>
+              )}
               {/* <Text fontSize={'xs'}>Profile</Text> */}
             </Stack>
           </ButtonGroup>
