@@ -15,7 +15,7 @@ const Profile = () => {
 
   return (
     <>
-      <Stack onMouseOver={handleMouseOver}>
+      <Stack onMouseOver={handleMouseOver} marginRight={"0.5rem"}>
         <Avatar boxSize="6" />
         {/* <Text fontSize={'xs'}>Profile</Text> */}
         {isVisible ? <ProfileDropdown onMouseOut={handleMouseOut} /> : ""}
