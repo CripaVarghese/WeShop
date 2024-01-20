@@ -64,60 +64,62 @@ const Header = () => {
 
         <HeaderTypeFilter />
 
-        <HStack>
-          <ButtonGroup
-            w={"100%"}
-            variant="ghost"
-            display={"flex"}
-            justifyContent={"space-between"}
-            alignItems={"center"}
-            cursor={"pointer"}
+        <HStack
+          display={"flex"}
+          justifyContent={"space-between"}
+          alignItems={"center"}
+          cursor={"pointer"}
+        >
+          <Button
+            display={{ base: "block", lg: "none" }}
+            alignItems="center"
+            variant={"ghost"}
+          >
+            <Search_icon />
+          </Button>
+          <Profile
+            isHovering={isHovering}
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
-          >
-            <Button
-              display={{ base: "block", lg: "none" }}
-              alignItems="center"
-              variant={"ghost"}
-            >
-              <Search_icon />
-            </Button>
-            <Profile />
-            <Stack>
-              <IconButton
-                icon={<CiHeart size={25} />}
-                aria-label=""
-                title="wishlist"
-                _hover={{ variant: "ghost" }}
-                onClick={() => navigate("/wishlist-page")}
-              />
-              {/* <Text fontSize={'xs'}>Profile</Text> */}
-            </Stack>
-            <Stack position="relative">
-              <IconButton
-                icon={<HiOutlineShoppingBag fontSize="1.50rem" />}
-                aria-label=""
-                title="bag"
-                onClick={() => navigate("/bag-page")}
-              />
-              {bagProdCount === 0 ? null : (
-                <Text
-                  fontSize={"12"}
-                  fontWeight={"500"}
-                  p="1px 6px"
-                  position="absolute"
-                  left="25"
-                  bottom={"5"}
-                  color="white"
-                  bg={"#f16565"}
-                  borderRadius={"50%"}
-                >
-                  {bagProdCount}
-                </Text>
-              )}
-              {/* <Text fontSize={'xs'}>Profile</Text> */}
-            </Stack>
-          </ButtonGroup>
+          />
+
+          <Stack>
+            <IconButton
+              icon={<CiHeart size={25} />}
+              aria-label=""
+              title="wishlist"
+              variant="ghost"
+              _hover={{ variant: "ghost" }}
+              onClick={() => navigate("/wishlist-page")}
+            />
+            {/* <Text fontSize={'xs'}>Profile</Text> */}
+          </Stack>
+          <Stack position="relative">
+            <IconButton
+              icon={<HiOutlineShoppingBag fontSize="1.50rem" />}
+              aria-label=""
+              title="bag"
+              variant="ghost"
+              _hover={{ variant: "ghost" }}
+              onClick={() => navigate("/bag-page")}
+            />
+            {bagProdCount === 0 ? null : (
+              <Text
+                fontSize={"12"}
+                fontWeight={"500"}
+                p="1px 6px"
+                position="absolute"
+                left="25"
+                bottom={"5"}
+                color="white"
+                bg={"#f16565"}
+                borderRadius={"50%"}
+              >
+                {bagProdCount}
+              </Text>
+            )}
+            {/* <Text fontSize={'xs'}>Profile</Text> */}
+          </Stack>
         </HStack>
       </Stack>
     </Box>
