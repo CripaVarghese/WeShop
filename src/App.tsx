@@ -3,12 +3,12 @@ import ErrorPage from "./components/ErrorPage";
 import Category from "./components/category/Category";
 import Header from "./components/header/Header";
 import SelectedProductDetails from "./components/selected_product_details/SelectedProductDetails";
-import WishlistProdAdded from "./components/wishList/WishlistProdAdded";
 import BagEmpty from "./components/bag/BagEmpty";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import WishlistEmpty from "./components/wishList/WishlistEmpty";
-import WishlistPage from "./components/wishList/WishListPage";
+import WishlistPage from "./components/wishList/WishlistPage";
+import WishlistProdAdded from "./components/wishList/WishlistProdAdded";
 import BagProdAdded from "./components/bag/BagProdAdded";
 import BagPage from "./components/bag/BagPage";
 
