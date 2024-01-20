@@ -7,8 +7,6 @@ import {
 } from "@chakra-ui/react";
 import { FiSearch } from "react-icons/fi";
 import NavbarTypeItems from "./NavbarTypeItems";
-import { navbarOptionsData } from "../../constants/navbarOptionsData";
-import { useState } from "react";
 
 const HeaderTypeFilter = () => {
   return (

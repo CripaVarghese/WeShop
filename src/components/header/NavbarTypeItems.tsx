@@ -4,6 +4,7 @@ import { navbarOptionsData } from "../../constants/navbarOptionsData";
 import DropdownNavItems from "./DropdownNavItems";
 import { fontStyle } from "../../constants/style";
 import { Link as RouterLink } from "react-router-dom";
+
 const NavbarTypeItems = () => {
   const [selectedMenuId, setSelectedMenuId] = useState<string | null>(null);
   const [isVisible, setIsVisible] = useState(false);
