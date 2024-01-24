@@ -3,7 +3,7 @@ import hero_grid_data from "../constants/hero_grid_data";
 
 const Hero = () => {
   return (
-    <Stack pt={"100px"} w={"100%"} alignItems={"center"}>
+    <Stack pt="20px" alignItems={"center"}>
       <Image src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2023/10/18/0f2b49dc-83f3-41d6-a534-7e2600c4060c1697639143412-MSB-Coupon--copy-3.jpg" />
       <Box display={"flex"}>
         <Image

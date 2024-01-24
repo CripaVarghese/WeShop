@@ -18,7 +18,7 @@ const Category = () => {
     setIsHovering(false);
   };
   return (
-    <Stack pt={100} w={"100%"}>
+    <Stack w={"100%"}>
       <Stack w={"100%"} alignItems={"center"}>
         <Stack w={"96%"} gap={2}>
           <HStack>
