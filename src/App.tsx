@@ -11,26 +11,33 @@ import WishlistPage from "./components/wishList/WishlistPage";
 import WishlistProdAdded from "./components/wishList/WishlistProdAdded";
 import BagProdAdded from "./components/bag/BagProdAdded";
 import BagPage from "./components/bag/BagPage";
+import Login from "./components/category/login/Login";
+import AppLayout from "./AppLayout";
 
 export const App = () => {
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/men" element={<Category />} />
-        <Route path="/bag-page" element={<BagPage />} />
-        <Route path="/bag-product-added" element={<BagProdAdded />} />
-        <Route path="/bag-empty" element={<BagEmpty />} />
-        <Route path="/wishlist-page" element={<WishlistPage />} />
-        <Route path="/wishlist-empty" element={<WishlistEmpty />} />
-        <Route path="/wishlist-prodAdded" element={<WishlistProdAdded />} />
-        <Route
-          path="/selected-product-details"
-          element={<SelectedProductDetails />}
-        />
-        <Route path="*" element={<ErrorPage />} />
+        <Route element={<AppLayout />}>
+          <Route path="/" element={<Hero />} />
+          <Route path="/men" element={<Category />} />
+          <Route path="/bag-page" element={<BagPage />} />
+          <Route path="/bag-product-added" element={<BagProdAdded />} />
+          <Route path="/bag-empty" element={<BagEmpty />} />
+          <Route path="/wishlist-page" element={<WishlistPage />} />
+          <Route path="/wishlist-empty" element={<WishlistEmpty />} />
+          <Route path="/wishlist-prodAdded" element={<WishlistProdAdded />} />
+          <Route path="/login" element={<Login />} />
+
+          <Route
+            path="/selected-product-details"
+            element={<SelectedProductDetails />}
+          />
+          <Route path="*" element={<ErrorPage />} />
+        </Route>
       </Routes>
+
       <Footer />
     </BrowserRouter>
   );
