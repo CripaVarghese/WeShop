@@ -16,7 +16,7 @@ const AppLayout = () => {
         <Header />
       </Box>
 
-      <Box pt="90px">
+      <Box pt="70px">
         <Outlet />
       </Box>
     </Stack>

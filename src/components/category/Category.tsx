@@ -18,8 +18,8 @@ const Category = () => {
     setIsHovering(false);
   };
   return (
-    <Stack w={"100%"}>
-      <Stack w={"100%"} alignItems={"center"}>
+    <Stack w={"100%"} pt="20px">
+      <Stack alignItems={"center"}>
         <Stack w={"96%"} gap={2}>
           <HStack>
             <Text fontSize={"xs"}>Home / Clothing /</Text>
