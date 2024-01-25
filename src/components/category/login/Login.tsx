@@ -1,72 +1,71 @@
 import {
   Box,
   Button,
-  Checkbox,
-  Container,
-  Divider,
-  FormControl,
-  FormLabel,
-  Heading,
-  HStack,
+  Image,
   Input,
+  InputGroup,
+  InputLeftAddon,
   Link,
   Stack,
   Text,
+  VStack,
+  chakra,
 } from "@chakra-ui/react";
-import { Password } from "./Password";
 
-const Login = () => (
-  <Container
-    maxW="lg"
-    py={{ base: "12", md: "24" }}
-    px={{ base: "0", sm: "8" }}
-  >
-    <Stack spacing="8">
-      <Stack spacing="6">
-        <Stack spacing={{ base: "2", md: "3" }} textAlign="center">
-          <Heading size={{ base: "xs", md: "sm" }}>
-            Log in to your account
-          </Heading>
-          <Text color="fg.muted">
-            Don't have an account? <Link href="#">Sign up</Link>
-          </Text>
-        </Stack>
-      </Stack>
+function Login() {
+  return (
+    <Box w="100vw" h="100vh" pt="32px" bg={"#FFEEEE"}>
       <Box
-        py={{ base: "0", sm: "8" }}
-        px={{ base: "4", sm: "10" }}
-        bg={{ base: "transparent", sm: "bg.surface" }}
-        boxShadow={{ base: "none", sm: "md" }}
-        borderRadius={{ base: "none", sm: "xl" }}
+        maxW="28%"
+        borderRadius="lg"
+        boxShadow="lg"
+        w="100%"
+        mx="auto"
+        h="80vh"
+        bg="white"
       >
-        <Stack spacing="6">
-          <Stack spacing="5">
-            <FormControl>
-              <FormLabel htmlFor="email">Email</FormLabel>
-              <Input id="email" type="email" />
-            </FormControl>
-            <Password />
-          </Stack>
-          <HStack justify="space-between">
-            <Checkbox defaultChecked>Remember me</Checkbox>
-            <Button variant="text" size="sm">
-              Forgot password?
+        <VStack spacing={"10"}>
+          <Image src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto,w_400,c_limit,fl_progressive/assets/images/2023/10/29/9610da61-a1a4-4215-b1fa-f612242d10e61698602536819-Flat_200--1-.jpg" />
+          <Stack w="80%" spacing={"6"}>
+            <Text fontSize={"lg"} fontWeight="bold">
+              Login{" "}
+              <chakra.span fontSize={"sm"} fontWeight="normal">
+                or
+              </chakra.span>{" "}
+              Signup
+            </Text>
+            <InputGroup>
+              <InputLeftAddon>+91</InputLeftAddon>
+              <Input type="tel" placeholder="Mobile number" required />
+            </InputGroup>
+            <Text fontSize="10px">
+              By continuing, I agree to the
+              <Link color="#ff3f6c" href="#">
+                {" Terms of Use & Privacy Policy"}
+              </Link>
+            </Text>
+            <Button
+              bg="#ff3f6c"
+              fontSize={"12px"}
+              fontWeight="bold"
+              color={"white"}
+              w="full"
+              borderRadius={"0"}
+            >
+              CONTINUE
             </Button>
-          </HStack>
-          <Stack spacing="6">
-            <Button>Sign in</Button>
-            <HStack>
-              <Divider />
-              <Text textStyle="sm" whiteSpace="nowrap" color="fg.muted">
-                or continue with
-              </Text>
-              <Divider />
-            </HStack>
+            <Text fontSize="10px">
+              Have trouble logging in?
+              <Link color="#ff3f6c" href="#">
+                {" Get help "}
+              </Link>
+            </Text>
+            {/* <Link color="#ff3f6c" href="#" fontSize="10px"></Link> */}
           </Stack>
-        </Stack>
+        </VStack>
       </Box>
-    </Stack>
-  </Container>
-);
+    </Box>
+  );
+}
 
 export default Login;
