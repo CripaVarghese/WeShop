@@ -4,8 +4,8 @@ const BundleMenu = ({ data }: any) => {
   return (
     <HStack
       position="absolute"
-      width={"1154px"}
-      top="40px"
+      top="100%"
+      left="0"
       zIndex="1"
       backgroundColor="white"
       px="5px"
