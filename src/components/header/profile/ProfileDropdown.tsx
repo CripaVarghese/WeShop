@@ -17,7 +17,7 @@ const ProfileDropdown = () => {
       {profileMenu.menuItems.map((item) => (
         <>
           {item.category.map((menuItem) => (
-            <Link to={menuItem?.url} key={menuItem.id}>
+            <Link to={`${menuItem?.url}`} key={menuItem.id}>
               <Text
                 fontSize={"13px"}
                 fontWeight={"normal"}
