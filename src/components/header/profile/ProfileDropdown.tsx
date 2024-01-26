@@ -1,5 +1,6 @@
 import { Stack, Divider, Text } from "@chakra-ui/react";
 import { profileMenu } from "../../../constants/profileMenu";
+import { Link } from "react-router-dom";
 
 const ProfileDropdown = () => {
   return (
@@ -16,14 +17,15 @@ const ProfileDropdown = () => {
       {profileMenu.menuItems.map((item) => (
         <>
           {item.category.map((menuItem) => (
-            <Text
-              key={menuItem.id}
-              fontSize={"13px"}
-              fontWeight={"normal"}
-              _hover={{ fontWeight: "700" }}
-            >
-              {menuItem.label}
-            </Text>
+            <Link to={menuItem?.url} key={menuItem.id}>
+              <Text
+                fontSize={"13px"}
+                fontWeight={"normal"}
+                _hover={{ fontWeight: "700" }}
+              >
+                {menuItem.label}
+              </Text>
+            </Link>
           ))}
           <Divider />
         </>

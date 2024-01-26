@@ -1,9 +1,12 @@
+import Login from "../components/category/login/Login";
+
 export interface profileMenuType {
   menuItems: {
     row: string;
     category: {
       id: string;
       label: string;
+      url?: string | undefined;
     }[];
   }[];
 }
@@ -16,6 +19,7 @@ export const profileMenu: profileMenuType = {
         {
           id: "Hello Myntra User",
           label: "Hello Myntra User",
+          url: "/login",
         },
       ],
     },
@@ -29,6 +33,7 @@ export const profileMenu: profileMenuType = {
         {
           id: "Wishlist",
           label: "Wishlist",
+          url: "/wishlist-page",
         },
         {
           id: "Gift Cards",
