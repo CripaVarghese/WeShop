@@ -42,23 +42,27 @@ const Category = () => {
 
           <Bundles />
 
-          <Box
-            p={"10px 15px"}
-            border={"1px solid #D7D9DC"}
+          <Stack
             w={"17%"}
-            position={"relative"}
             onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
           >
-            <HStack justifyContent={"space-between"}>
-              <HStack>
-                <Text fontSize={"xs"}>Sort by: </Text>
-                <Text {...fontStyle.xsBold}>Recommended</Text>
+            <Box
+              p={"10px 15px"}
+              border={"1px solid #D7D9DC"}
+              position={"relative"}
+            >
+              <HStack justifyContent={"space-between"}>
+                <HStack>
+                  <Text fontSize={"xs"}>Sort by: </Text>
+                  <Text {...fontStyle.xsBold}>Recommended</Text>
+                </HStack>
+                <ChevronDownIcon />
               </HStack>
-              <ChevronDownIcon />
-            </HStack>
-          </Box>
+            </Box>
 
-          {isHovering && <Recommendation onMouseOut={handleMouseOut} />}
+            {isHovering && <Recommendation />}
+          </Stack>
         </HStack>
       </Stack>
       <Divider />
