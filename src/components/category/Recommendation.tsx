@@ -8,7 +8,7 @@ const Recommendation = ({ onMouseOut }: any) => {
       <Stack
         backgroundColor={"white"}
         position={"absolute"}
-        top="222px"
+        top="210px"
         right="29px"
         w={"16.2%"}
         p={"15px"}
