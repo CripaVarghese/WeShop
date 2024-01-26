@@ -8,11 +8,9 @@ import {
   chakra,
   Link,
 } from "@chakra-ui/react";
-import online_Data from "../footerData/online_Data";
-import usefulLinks_Data from "../footerData/usefulLinks_Data";
-import policy from "../footerData/policy_Data";
 import { fontStyle, footerStyles } from "../constants/style";
 import externalLinks_Data from "../footerData/externalLinks_Data";
+import dataLinks from "../footerData/dataLinks";
 
 const Footer = () => {
   return (
@@ -40,11 +38,20 @@ const Footer = () => {
             // flexDirection={{ base: "column-reverse", lg: "column" }}
             flexDirection={"column"}
           >
+            {/* {dataLinks.map((dataLink, dataLinkIndex) => (
+              <> */}
             <Stack display={{ base: "none", lg: "block" }}>
               <Text {...footerStyles.headingStyle}>ONLINE SHOPPING</Text>
-              {online_Data.map((onlineData, onlineDataIndex) => (
+              {dataLinks.online_Data.map((onlineData, onlineDataIndex) => (
                 <Text key={onlineDataIndex} {...footerStyles.listItemStyle}>
-                  {onlineData.label}
+                  <Link
+                    key={onlineDataIndex}
+                    {...footerStyles.listItemStyle}
+                    href={onlineData.link}
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    {onlineData.label}
+                  </Link>
                 </Text>
               ))}
             </Stack>
@@ -54,12 +61,17 @@ const Footer = () => {
                 // flexDirection={{ base: "row", lg: "column" }}
                 flexDirection={"column"}
               >
-                {usefulLinks_Data.map((linksData, linksDataIndex) => (
+                {dataLinks.usefulLinks_Data.map((linksData, linksDataIndex) => (
                   <Text key={linksDataIndex} {...footerStyles.listItemStyle}>
-                    {linksData.label}
+                    <Link
+                      {...footerStyles.listItemStyle}
+                      href={linksData.link}
+                      _hover={{ textDecoration: "none" }}
+                    >
+                      {linksData.label}
+                    </Link>
                   </Text>
                 ))}
-                //{" "}
               </Stack>
             </Stack>
           </Stack>
@@ -69,9 +81,15 @@ const Footer = () => {
               // flexDirection={{ base: "row", lg: "column" }}
               flexDirection={"column"}
             >
-              {policy.map((policyData, policyDataIndex) => (
+              {dataLinks.policy.map((policyData, policyDataIndex) => (
                 <Text key={policyDataIndex} {...footerStyles.listItemStyle}>
-                  {policyData.label}
+                  <Link
+                    {...footerStyles.listItemStyle}
+                    href={policyData.link}
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    {policyData.label}
+                  </Link>
                 </Text>
               ))}
             </Stack>
