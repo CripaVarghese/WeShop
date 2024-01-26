@@ -6,13 +6,13 @@ import {
   Image,
   IconButton,
   chakra,
+  Link,
 } from "@chakra-ui/react";
 import online_Data from "../footerData/online_Data";
 import usefulLinks_Data from "../footerData/usefulLinks_Data";
 import policy from "../footerData/policy_Data";
-import { FaFacebookSquare, FaTwitter, FaYoutube } from "react-icons/fa";
-import { ImInstagram } from "react-icons/im";
 import { fontStyle, footerStyles } from "../constants/style";
+import externalLinks_Data from "../footerData/externalLinks_Data";
 
 const Footer = () => {
   return (
@@ -91,41 +91,31 @@ const Footer = () => {
               </Text>
               <Stack
                 flexDirection={"row"}
-                w={"40%"}
+                w="80%"
                 h={"50px"}
                 gap={3}
                 justifyContent={"space-between"}
+                alignItems={"baseline"}
               >
-                <Image
-                  marginTop={"0.5rem"}
-                  src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
-                />
-                <Image src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png" />
+                {externalLinks_Data.images.map((link) => (
+                  <Link key={link.label} href={link.link} isExternal>
+                    <Image alt={link.label} src={link.imageSrc} />
+                  </Link>
+                ))}
               </Stack>
             </Stack>
             <Stack spacing={0}>
               <Text {...footerStyles.headingStyle}>KEEP IN TOUCH</Text>
               <HStack>
-                <IconButton
-                  icon={<FaFacebookSquare size={"25px"} />}
-                  variant={"link"}
-                  aria-label={""}
-                />
-                <IconButton
-                  icon={<FaTwitter size={"25px"} />}
-                  variant={"link"}
-                  aria-label=""
-                />
-                <IconButton
-                  icon={<FaYoutube size={"29px"} />}
-                  variant={"link"}
-                  aria-label=""
-                />
-                <IconButton
-                  icon={<ImInstagram size={"21px"} />}
-                  variant={"link"}
-                  aria-label=""
-                />
+                {externalLinks_Data.iconButtons.map((icon) => (
+                  <Link key={icon.label} href={icon.link} isExternal>
+                    <IconButton
+                      icon={<icon.icon size={"21px"} />}
+                      variant={"link"}
+                      aria-label=""
+                    />
+                  </Link>
+                ))}
               </HStack>
             </Stack>
           </Stack>
