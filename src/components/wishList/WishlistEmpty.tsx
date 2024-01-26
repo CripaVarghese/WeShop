@@ -3,7 +3,12 @@ import wishlist_Empty from "./wishlist_Empty.png";
 
 const WishlistEmpty = () => {
   return (
-    <Stack h={"100vh"} justifyContent={"center"} alignItems={"center"}>
+    <Stack
+      w={"100vw"}
+      h={"75vh"}
+      justifyContent={"center"}
+      alignItems={"center"}
+    >
       <Stack
         w={"25%"}
         h={"42%"}

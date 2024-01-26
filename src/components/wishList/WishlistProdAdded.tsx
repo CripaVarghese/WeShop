@@ -20,8 +20,8 @@ const WishlistProdAdded = ({ cartItems }: any) => {
   // const { onOpen, isOpen, onClose } = useDisclosure();
 
   return (
-    <Stack w={"100%"} h={"100vh"} alignItems={"center"}>
-      <Stack w={"90%"} h={"400px"} gap={10} mt="130px">
+    <Stack w={"100%"} h={"100vh"} pt="40px" alignItems={"center"}>
+      <Stack w={"90%"} h={"400px"} gap={10}>
         <Text fontWeight={"700"} fontSize={"16px"}>
           My Wishlist{" "}
           <chakra.span color={"#282828"} fontWeight={"normal"} fontSize={"md"}>

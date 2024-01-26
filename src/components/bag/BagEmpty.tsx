@@ -4,7 +4,12 @@ import { fontStyle } from "../../constants/style";
 
 const BagEmpty = () => {
   return (
-    <Stack h={"85vh"} justifyContent={"center"} alignItems={"center"}>
+    <Stack
+      w={"100vw"}
+      h={"70vh"}
+      justifyContent={"center"}
+      alignItems={"center"}
+    >
       <Stack w={"25%"} alignItems={"center"} justifyContent={"space-between"}>
         <Image src={bag_empty} />
         <Stack alignItems={"center"} spacing={1} py="20px">
