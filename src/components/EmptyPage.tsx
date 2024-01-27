@@ -28,6 +28,7 @@ const EmptyPage = (props: { isOpen: any; onClose: any }) => {
             border="1px solid "
             borderRadius={"none"}
             letterSpacing={1}
+            _hover={{ bg: "#ff3f6c", color: "white" }}
             onClick={onClose}
           >
             CLOSE
