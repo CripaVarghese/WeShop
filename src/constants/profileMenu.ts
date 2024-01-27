@@ -1,12 +1,10 @@
-import Login from "../components/category/login/Login";
-
 export interface profileMenuType {
   menuItems: {
     row: string;
     category: {
       id: string;
       label: string;
-      url?: string | undefined;
+      url?: string;
     }[];
   }[];
 }

@@ -32,37 +32,37 @@ const dataLinks = {
   usefulLinks_Data: [
     {
       label: "Blog",
-      link: "https://blog.myntra.com",
+      link: "/blog",
     },
     {
       label: "Careers",
-      link: "https://careers.myntra.com",
+      link: "/careers",
     },
     {
       label: "Site Map",
-      link: "https://www.myntra.com/sitemap",
+      link: "/site Map",
     },
     {
       label: "Corporate Information",
-      link: "https://www.myntra.com/corp-info",
+      link: "/corporate Information",
     },
     {
       label: "White hat",
-      link: "https://www.myntra.com/security/whitehat",
+      link: "/white hat",
     },
   ],
   policy: [
     {
       label: "Contact Us",
-      link: "https://www.myntra.com/contactus",
+      link: "/contact Us",
     },
     {
       label: "FAQ",
-      link: "https://www.myntra.com/faqs",
+      link: "/FAQ",
     },
     {
       label: "T&C",
-      link: "https://www.myntra.com/tac",
+      link: "/T&C",
     },
     {
       label: "Terms Of Use",
