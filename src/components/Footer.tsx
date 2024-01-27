@@ -129,17 +129,18 @@ const Footer = () => {
                 alignItems={"baseline"}
               >
                 {externalLinks_Data.images.map((link) => (
-                  <Link key={link.label} href={link.link} isExternal>
+                  <Link key={link.label} onClick={onOpen}>
                     <Image alt={link.label} src={link.imageSrc} />
                   </Link>
                 ))}
+                <EmptyPage isOpen={isOpen} onClose={onClose} />
               </Stack>
             </Stack>
             <Stack spacing={0}>
               <Text {...footerStyles.headingStyle}>KEEP IN TOUCH</Text>
               <HStack>
                 {externalLinks_Data.iconButtons.map((icon) => (
-                  <Link key={icon.label} href={icon.link} isExternal>
+                  <Link key={icon.label} onClick={onOpen}>
                     <IconButton
                       icon={<icon.icon size={"21px"} />}
                       variant={"link"}
@@ -147,6 +148,7 @@ const Footer = () => {
                     />
                   </Link>
                 ))}
+                <EmptyPage isOpen={isOpen} onClose={onClose} />
               </HStack>
             </Stack>
           </Stack>
