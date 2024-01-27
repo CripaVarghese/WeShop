@@ -13,6 +13,7 @@ import BagProdAdded from "./components/bag/BagProdAdded";
 import BagPage from "./components/bag/BagPage";
 import Login from "./components/category/login/Login";
 import AppLayout from "./AppLayout";
+import EmptyPage from "./components/EmptyPage";
 
 export const App = () => {
   return (
@@ -29,6 +30,10 @@ export const App = () => {
           <Route path="/wishlist-empty" element={<WishlistEmpty />} />
           <Route path="/wishlist-prodAdded" element={<WishlistProdAdded />} />
           <Route path="/login" element={<Login />} />
+          <Route
+            path="/empty_page"
+            element={<EmptyPage isOpen={undefined} onClose={undefined} />}
+          />
 
           <Route
             path="/selected-product-details"

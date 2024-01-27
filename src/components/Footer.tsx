@@ -7,12 +7,15 @@ import {
   IconButton,
   chakra,
   Link,
+  useDisclosure,
 } from "@chakra-ui/react";
 import { fontStyle, footerStyles } from "../constants/style";
 import externalLinks_Data from "../footerData/externalLinks_Data";
 import dataLinks from "../footerData/dataLinks";
+import EmptyPage from "./EmptyPage";
 
 const Footer = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box
       display={"flex"}
@@ -62,16 +65,21 @@ const Footer = () => {
                 flexDirection={"column"}
               >
                 {dataLinks.usefulLinks_Data.map((linksData, linksDataIndex) => (
-                  <Text key={linksDataIndex} {...footerStyles.listItemStyle}>
+                  <Text
+                    key={linksDataIndex}
+                    {...footerStyles.listItemStyle}
+                    onClick={onOpen}
+                  >
                     <Link
                       {...footerStyles.listItemStyle}
-                      href={linksData.link}
+                      // href={linksData.link}
                       _hover={{ textDecoration: "none" }}
                     >
                       {linksData.label}
                     </Link>
                   </Text>
                 ))}
+                <EmptyPage isOpen={isOpen} onClose={onClose} />
               </Stack>
             </Stack>
           </Stack>
@@ -82,16 +90,21 @@ const Footer = () => {
               flexDirection={"column"}
             >
               {dataLinks.policy.map((policyData, policyDataIndex) => (
-                <Text key={policyDataIndex} {...footerStyles.listItemStyle}>
+                <Text
+                  key={policyDataIndex}
+                  {...footerStyles.listItemStyle}
+                  onClick={onOpen}
+                >
                   <Link
                     {...footerStyles.listItemStyle}
-                    href={policyData.link}
+                    // href={policyData.link}
                     _hover={{ textDecoration: "none" }}
                   >
                     {policyData.label}
                   </Link>
                 </Text>
               ))}
+              <EmptyPage isOpen={isOpen} onClose={onClose} />
             </Stack>
           </Stack>
         </Stack>
