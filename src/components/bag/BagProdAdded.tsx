@@ -12,14 +12,15 @@ const BagProdAdded = () => {
   return (
     <Stack
       flexDirection={{ base: "column", md: "row" }}
-      pt={"130px"}
-      pb="50px"
-      w={"100%"}
+      pt={"40px"}
+      w={"80vw"}
+      h="100vh"
       alignItems={{ base: "center", md: "flex-start" }}
       justifyContent={"center"}
       spacing={2}
     >
-      <Stack w={{ base: "85%", sm: "90%", md: "50%", lg: "40%" }}>
+      <Stack w="50%">
+        {/* w={{ base: "85%", sm: "90%", md: "50%", lg: "40%" }} */}
         <DiscountOffer />
         <TotalNumber />
         {bagItems &&

@@ -12,17 +12,15 @@ import { fontStyle } from "../../constants/style";
 
 const PriceDetails = () => {
   return (
-    <Box w={{ base: "85%", sm: "90%", md: "30%", lg: "22%" }}>
-      <VStack spacing={4} w="100%" alignItems={"flex-start"}>
+    <Box w="25%">
+      {/* w={{ base: "85%", sm: "90%", md: "100%", lg: "22%" }} */}
+      <VStack spacing={4} alignItems={"flex-start"}>
         <Stack w="100%">
           <Text fontSize="11px" fontWeight="bold" color={"#535766"}>
             COUPONS
           </Text>
           <HStack w="100%" justifyContent={"space-between"}>
-            <HStack
-              w={{ base: "45%", md: "40%" }}
-              justifyContent={"space-between"}
-            >
+            <HStack w={{ base: "45%" }} justifyContent={"space-between"}>
               <ApplyCouponTag_icon />
               <Text {...fontStyle.xsBold}>Apply Coupons</Text>
             </HStack>
