@@ -2,11 +2,11 @@ export const fontStyle = {
   fontSize: "xs",
   smBold: {
     fontSize: "sm",
-    fontWeight: "bold",
+    fontWeight: "600",
   },
   xsBold: {
     fontSize: "xs",
-    fontWeight: "bold",
+    fontWeight: "semibold",
   },
 };
 
